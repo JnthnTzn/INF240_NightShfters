@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurryTales</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5ede0;
+        }
+
+        nav {
+            background-color: #e8dcc8;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            border-bottom: 1px solid #d4c4a8;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text span:first-child {
+            font-size: 2rem;
+            font-family: 'Georgia', serif;
+            color: #5c3d1e;
+            font-style: italic;
+        }
+
+        .logo-text span:last-child {
+            font-size: 0.75rem;
+            color: #7a5c3a;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #3b2a1a;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover { color: #7a5c3a; }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-contact {
+            background-color: #4a5e2a;
+            color: white;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn-contact:hover { background-color: #3a4e1a; }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 60px 0 60px;
+            background-color: #f5ede0;
+            min-height: 85vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-left {
+            max-width: 55%;
+            z-index: 1;
+        }
+
+        .hero-left h1 {
+            font-size: 5rem;
+            color: #3b2a1a;
+            font-style: italic;
+            line-height: 1;
+        }
+
+        .hero-left h2 {
+            font-size: 2rem;
+            color: #5c7a2a;
+            font-style: italic;
+            margin: 10px 0 20px;
+        }
+
+        .tagline {
+            background-color: rgba(210, 180, 140, 0.4);
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-style: italic;
+            color: #5c3d1e;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .hero-left p {
+            color: #3b2a1a;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 480px;
+        }
+
+        .hero-left p span { color: #7a5c3a; }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-buttons button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 22px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-adopt { background-color: #4a5e2a; }
+        .btn-rescue { background-color: #7a4a1a; }
+        .btn-donate { background-color: #8b3a2a; }
+
+        .hero-buttons button:hover { opacity: 0.9; }
+
+        .hero-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 90%;
+        }
+
+        .hero-right img {
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="FurryTales Logo">
+            <div class="logo-text">
+                <span>Furry Tales</span>
+                <span>~ Where Every Paw Has a Story ~</span>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Rescue</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Collaborate</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="btn-contact">Contact Us</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Furry Tales</h1>
+            <h2>Where Every Paw Has a Story</h2>
+            <div class="tagline">🤍 <em>Giving words to the hearts that cannot speak.</em></div>
+            <p>
+                We are a community that rescues, heals, and
+                <span>re</span>-homes animals in need. Together, let's write
+                their happy ending.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-adopt">🏠 Adopt</button>
+                <button class="btn-rescue">📢 Be Their Voice (Rescue)</button>
+                <button class="btn-donate">🤲 Donate Now</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="images/hero-pets.png" alt="Cat and Dog">
+        </div>
+
+        <svg class="wave" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#e8dcc8" d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z"/>
+        </svg>
+    </section>
+
+</body>
+</html>
