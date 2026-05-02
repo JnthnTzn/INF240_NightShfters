@@ -64,7 +64,7 @@ nav {
 }
 
 .btn-contact {
-    background-color: #4a5e2a;
+    background-color: #b98031;
     color: white;
     padding: 10px 22px;
     border: none;
@@ -73,7 +73,7 @@ nav {
     cursor: pointer;
 }
 
-.btn-contact:hover { background-color: #3a4e1a; }
+.btn-contact:hover { background-color: #4a5e2a; }
 
 .hero {
     display: flex;
