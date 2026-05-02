@@ -223,16 +223,14 @@ nav {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-.feature-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.feature-image {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
     border-radius: 22px;
-    font-size: 1.8rem;
-    background-color: #e7d2b2;
+    margin-bottom: 18px;
+    background-color: #fff;
+    padding: 10px;
 }
 
 .feature-card h3 {
