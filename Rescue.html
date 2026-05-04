@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue - FurryTales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Rescue.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">
+            <img src="Assets/HomePage/Logo.png" alt="FurryTales Logo">
+            <div class="logo-text">
+                <span>Furry Tales</span>
+                <span>~ Where Every Paw Has a Story ~</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="Rescue.html">Rescue</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Collaborate</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fur Tips</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+        <button class="btn-contact">Contact Us</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Be Their Voice</h1>
+            <p>Your kindness can change a life.<br>Report an animal in need and help us rescue, heal, and rehome.</p>
+
+            <div class="form-card">
+                <div class="form-grid">
+                    <!-- Your Name -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                            Your Name
+                        </label>
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <!-- Contact Number -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.09 4.18 2 2 0 015.07 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 7l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            Contact Number
+                        </label>
+                        <input type="text" placeholder="Contact No.">
+                    </div>
+                    <!-- Location -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Location
+                        </label>
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <!-- Description -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            Description
+                        </label>
+                        <textarea placeholder="Description"></textarea>
+                    </div>
+                    <!-- Upload Photo -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                            Upload Photo
+                        </label>
+                        <div class="upload-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c4a882" stroke-width="2" flex-shrink="0"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3"/></svg>
+                            <div class="upload-text">
+                                <p>Click to <span>upload</span> or drag and drop</p>
+                                <small>JPG, PNG (Max 10MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Urgency Level -->
+                    <div class="form-field">
+                        <label>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b2a1a" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            Urgency Level
+                        </label>
+                        <div class="urgency-btns">
+                            <button>Low</button>
+                            <button>Medium</button>
+                            <button class="active">High</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-submit">Submit Rescue Report</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="dog-circle">
+                <img src="Assets/RescuePage/doggyRescue.png" alt="Dog">
+            </div>
+            <div class="quote-bubble">
+                <p>One act of kindness can change their story.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon"><img src="Assets/RescuePage/paw.png" alt="Report"></div>
+                <h3>Report</h3>
+                <p>Share the details and location of the animal in need.</p>
+            </div>
+            <div class="step-arrow">- - - - →</div>
+            <div class="step">
+                <div class="step-icon"><img src="Assets/RescuePage/Heartcircle.png" alt="Respond"></div>
+                <h3>Respond</h3>
+                <p>Our team receives your report and rushes to help.</p>
+            </div>
+            <div class="step-arrow">- - - - →</div>
+            <div class="step">
+                <div class="step-icon"><img src="Assets/RescuePage/cross.png" alt="Recover"></div>
+                <h3>Recover</h3>
+                <p>Animal receives medical care, food, and lots of love.</p>
+            </div>
+            <div class="step-arrow">- - - - →</div>
+            <div class="step">
+                <div class="step-icon"><img src="Assets/RescuePage/home.png" alt="New Home"></div>
+                <h3>New Home</h3>
+                <p>They heal, they thrive, and find a forever home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS OF RESCUERS -->
+    <section class="contacts-section">
+        <h2>Contacts of Rescuers</h2>
+        <div class="contacts-bg">
+            <div class="contacts-grid">
+                <div class="org">
+                    <h3>Philippine Animal Welfare Society (PAWS)</h3>
+                    <ul>
+                        <li><b>Focus:</b> A volunteer-based NGO dedicated to preventing animal cruelty through sheltering, advocacy, and education.</li>
+                        <li><b>Contact:</b> (02) 7577-7178 | philpaws@paws.org.ph.</li>
+                        <li><b>Location:</b> Aurora Blvd. cor. Katipunan Valley, Loyola Heights, Quezon City.</li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h3>PAWSSION Project</h3>
+                    <ul>
+                        <li><b>Focus:</b> A non-profit organization primarily focused on rescuing, rehabilitating, and rehoming dogs from pounds and distressed situations.</li>
+                        <li><b>Contact:</b> Information is frequently updated via their official Instagram and Facebook pages</li>
+                        <li><b>Location:</b> Bases in Bacolod City and San Jose del Monte, Bulacan</li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h3>Animal Kingdom Foundation (AKF)</h3>
+                    <ul>
+                        <li><b>Focus:</b> Dedicated to rescuing animals from the illegal dog meat trade and rehabilitating abused animals.</li>
+                        <li><b>Contact:</b> 0939-914-2403 | 0939-914-2405 | hello@akfrescues.org</li>
+                        <li><b>Location:</b> No. 8 Purante St., Brgy. CubCub, Capas, Tarlac (Rescue Center)</li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h3>Philippine Animal Rescue Team (PART)</h3>
+                    <ul>
+                        <li><b>Focus:</b> A "no-kill" animal rescue organization that manages a large sanctuary for a wide variety of rescued animals.</li>
+                        <li><b>Contact:</b> donorbox.org/sharehope-2 (for support and inquiries)</li>
+                        <li><b>Location:</b> Sanctuary located in Angat, Bulacan</li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h3>CARA Welfare Philippines</h3>
+                    <ul>
+                        <li><b>Focus:</b> Promotes animal welfare through education, affordable sterilization (Kapon), and the "Trap-Neuter-Vaccinate-Return" (TNVR) program.</li>
+                        <li><b>Contact:</b> 0919-579-0047 | 0905-253-0129 | 8532-3340</li>
+                        <li><b>Location:</b> 175 Lopez Rizal St. cor. Samat St., Mandaluyong City</li>
+                    </ul>
+                </div>
+                <div class="org">
+                    <h3>Help Mandaluyong Animal Shelter (Help MAS Dogs)</h3>
+                    <ul>
+                        <li><b>Focus:</b> A community-led group that provides support for dogs impounded at the Mandaluyong City dog pound.</li>
+                        <li><b>Contact:</b> helpmasdogs@gmail.com</li>
+                        <li><b>Location:</b> Mandaluyong City</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
