@@ -1,5 +1,3 @@
-/* features.css */
-
 .feature-section {
     width: 100%;
     min-width: 1440px;
@@ -46,7 +44,6 @@
     border-radius: 10px;
 }
 
-/* ICON */
 .feature-image {
     width: 85px;
     height: 85px;
@@ -56,7 +53,6 @@
     margin-bottom: 20px;
 }
 
-/* TITLE */
 .feature-card h3 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 26px;
@@ -66,7 +62,6 @@
     margin-bottom: 18px;
 }
 
-/* DESCRIPTION */
 .feature-card p {
     width: 210px;
     min-height: 78px;   /* keeps all Learn More aligned */
@@ -79,7 +74,6 @@
     margin-bottom: 22px;
 }
 
-/* LEARN MORE */
 .feature-card a {
     font-family: 'Lato', sans-serif;
     font-size: 17px;

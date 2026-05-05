@@ -1,4 +1,3 @@
-/* hero.css */
 @font-face {
     font-family: 'Playlist Script';
     src: url('../../Fonts/Playlist\ Script.otf') format('opentype');
@@ -15,7 +14,6 @@
     overflow: hidden;
 }
 
-/* LEFT SIDE TEXT */
 .hero-left {
     position: absolute;
     top: 20px;
@@ -43,7 +41,6 @@
     margin-top: 10px;
 }
 
-/* TAGLINE */
 .tagline img {
         width: 510px;
         height: auto;
@@ -52,7 +49,6 @@
         margin-top: -15px;
 }
 
-/* DESCRIPTION */
 .tagline p {
     width: 330px;
     color: #3b2a1a;
@@ -64,7 +60,6 @@
 }
 
 
-/* BUTTONS */
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -118,7 +113,6 @@
     object-fit: contain;
 }
 
-/* RIGHT SIDE HERO IMAGE */
 .hero-right {
     position: absolute;
     right: 20px;
@@ -130,7 +124,6 @@
     z-index: 1;
 }
 
-/* soft background behind pets */
 .hero-right::before {
     content: "";
     position: absolute;

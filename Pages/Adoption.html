@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furry Tales — Find Your New Best Friend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Stylesheets/Adoption.css" />
+  <link rel="stylesheet" href="../Stylesheets/footer.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Adoption.html">Adopt</a></li>
+        <li><a href="Rescue.html">Rescue</a></li>
+        <li><a href="Donation.html">Donate</a></li>
+        <li><a href="#">Collaborate</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="FurTips.html">Fur Tips</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn-contact">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-container">
+
+      <div class="hero-left">
+        <p class="hero-eyebrow">🐾 Trusted Pet Adoption Platform</p>
+        <h1 class="hero-title">Find Your New<br />Best Friend</h1>
+        <div class="hero-line"></div>
+        <p class="hero-desc">
+          Every rescued animal has a story —
+          some filled with hardship, others with quiet hope.<br /><br />
+          But their story isn't over yet.
+          It's still waiting for a happy ending.<br /><br />
+          At <strong>Furry Tales</strong>, we help connect loving people
+          with animals ready for a second chance.
+          Their story isn't over — it's just waiting for
+          someone to continue it.
+        </p>
+        <div class="hero-btns">
+          <a href="#adopt" class="btn-primary">Adopt Now →</a>
+          <a href="#rescue" class="btn-ghost">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="2400">0</span><span class="stat-plus">+</span>
+            <span class="stat-text">Pets Adopted</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="180">0</span><span class="stat-plus">+</span>
+            <span class="stat-text">Shelters</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-text">Happy Families</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <span class="hero-badge">● Ready for Adoption</span>
+          <img
+            src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80"
+            alt="Dog ready for adoption"
+            class="hero-photo"
+          />
+          <div class="hero-card-bottom">
+            <div>
+              <p class="hero-card-title">🐶 Meet our furry friends</p>
+              <p class="hero-card-sub">Hundreds of pets waiting for you</p>
+            </div>
+            <a href="#adopt" class="hero-card-btn">→</a>
+          </div>
+        </div>
+        <div class="chip chip-a">🐱 Cats Available</div>
+        <div class="chip chip-b">🐶 Dogs Available</div>
+        <div class="chip chip-c">❤️ 2.4k+ Adopted</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADOPTION GALLERY -->
+  <section class="gallery" id="adopt">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="section-tag">Our Pets</span>
+        <h2 class="section-title">Adoption</h2>
+        <p class="section-desc">
+          A loving home can change their world.<br />
+          Find your new best friend and give them the life they deserve.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <div class="filter-item">
+          <label>Type</label>
+          <select id="filterType">
+            <option value="">All Animals</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label>Age</label>
+          <select id="filterAge">
+            <option value="">Any Age</option>
+            <option value="puppy">Puppy / Kitten</option>
+            <option value="young">Young</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label>Size</label>
+          <select id="filterSize">
+            <option value="">Any Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label>Gender</label>
+          <select id="filterGender">
+            <option value="">Any Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="filter-item filter-search-item">
+          <label>Search</label>
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="filterSearch" placeholder="Search by name…" />
+          </div>
+        </div>
+        <div class="filter-item">
+          <label>Sort</label>
+          <select id="filterSort">
+            <option value="">Default</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="cards" id="cardsGrid">
+
+        <div class="card" data-name="Milo" data-type="dog" data-age="young" data-size="medium" data-gender="male">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&q=80" alt="Milo" loading="lazy" />
+            <button class="fav" aria-label="Favourite">♡</button>
+            <span class="card-badge">Dog</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Milo</span>
+              <span class="gender male">♂ Male</span>
+            </div>
+            <p class="card-meta">🎂 2 yrs &nbsp;·&nbsp; 📏 Medium</p>
+            <p class="card-loc">📍 Sunshine Shelter, CA</p>
+            <div class="card-tags">
+              <span>Playful</span><span>Friendly</span><span>Energetic</span>
+            </div>
+            <a href="#" class="btn-card">View Profile</a>
+          </div>
+        </div>
+
+        <div class="card" data-name="Luna" data-type="cat" data-age="adult" data-size="small" data-gender="female">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&q=80" alt="Luna" loading="lazy" />
+            <button class="fav" aria-label="Favourite">♡</button>
+            <span class="card-badge">Cat</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Luna</span>
+              <span class="gender female">♀ Female</span>
+            </div>
+            <p class="card-meta">🎂 3 yrs &nbsp;·&nbsp; 📏 Small</p>
+            <p class="card-loc">📍 Happy Paws, NY</p>
+            <div class="card-tags">
+              <span>Calm</span><span>Gentle</span><span>Curious</span>
+            </div>
+            <a href="#" class="btn-card">View Profile</a>
+          </div>
+        </div>
+
+        <div class="card" data-name="Rocky" data-type="dog" data-age="adult" data-size="large" data-gender="male">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=400&q=80" alt="Rocky" loading="lazy" />
+            <button class="fav" aria-label="Favourite">♡</button>
+            <span class="card-badge">Dog</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Rocky</span>
+              <span class="gender male">♂ Male</span>
+            </div>
+            <p class="card-meta">🎂 4 yrs &nbsp;·&nbsp; 📏 Large</p>
+            <p class="card-loc">📍 Second Chance, TX</p>
+            <div class="card-tags">
+              <span>Loyal</span><span>Brave</span><span>Active</span>
+            </div>
+            <a href="#" class="btn-card">View Profile</a>
+          </div>
+        </div>
+
+        <div class="card" data-name="Coco" data-type="dog" data-age="puppy" data-size="small" data-gender="female">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&q=80" alt="Coco" loading="lazy" />
+            <button class="fav" aria-label="Favourite">♡</button>
+            <span class="card-badge">Dog</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Coco</span>
+              <span class="gender female">♀ Female</span>
+            </div>
+            <p class="card-meta">🎂 8 mos &nbsp;·&nbsp; 📏 Small</p>
+            <p class="card-loc">📍 Warm Hearts, FL</p>
+            <div class="card-tags">
+              <span>Cuddly</span><span>Sweet</span><span>Lively</span>
+            </div>
+            <a href="#" class="btn-card">View Profile</a>
+          </div>
+        </div>
+
+        <div class="card" data-name="Buddy" data-type="dog" data-age="senior" data-size="medium" data-gender="male">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=400&q=80" alt="Buddy" loading="lazy" />
+            <button class="fav" aria-label="Favourite">♡</button>
+            <span class="card-badge">Dog</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Buddy</span>
+              <span class="gender male">♂ Male</span>
+            </div>
+            <p class="card-meta">🎂 7 yrs &nbsp;·&nbsp; 📏 Medium</p>
+            <p class="card-loc">📍 Golden Years, OR</p>
+            <div class="card-tags">
+              <span>Gentle</span><span>Wise</span><span>Loving</span>
+            </div>
+            <a href="#" class="btn-card">View Profile</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p id="noResults" class="no-results" style="display:none;">No pets match your filters. Try adjusting your search.</p>
+
+      <div class="gallery-cta">
+        <a href="#" class="btn-ghost">View All Available Pets</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADOPTION PROCESS -->
+  <section class="process" id="rescue">
+    <div class="container">
+
+      <div class="process-panel">
+        <div class="process-left">
+          <div class="process-house">🏡</div>
+          <span class="section-tag section-tag-light">How It Works</span>
+          <h2 class="process-title">Adoption is<br />a Promise</h2>
+          <p class="process-desc">
+            A loving home can change their world.
+            Find your new best friend and give them
+            the life they deserve.
+          </p>
+          <a href="#adopt" class="btn-primary">Start Your Journey</a>
+        </div>
+
+        <div class="process-right">
+          <div class="steps">
+            <div class="step">
+              <div class="step-circle">🔍</div>
+              <h4>Browse</h4>
+              <p>Find a pet that matches your lifestyle.</p>
+            </div>
+            <div class="step">
+              <div class="step-circle">📋</div>
+              <h4>Apply</h4>
+              <p>Fill out our simple adoption application.</p>
+            </div>
+            <div class="step">
+              <div class="step-circle">🤝</div>
+              <h4>Meet</h4>
+              <p>Meet your potential new best friend.</p>
+            </div>
+            <div class="step">
+              <div class="step-circle">🏠</div>
+              <h4>Adopt</h4>
+              <p>Bring them home and start your journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wave-wrap">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,35 C360,70 720,0 1080,35 C1260,52 1380,20 1440,35 L1440,70 L0,70 Z" fill="#fdf6ee"/>
+      </svg>
+    </div>
+
+    <div class="process-cta">
+      <p class="cta-quote">"Every adoption story begins with a choice to care."</p>
+      <a href="#adopt" class="btn-primary">Learn About Our Adoption Process</a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+
+      <div class="footer-section footer-logo">
+        <div class="footer-logo-content">
+          <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="social-img-btn">
+            <img src="../Assets/HomePage/facebook.png" alt="Facebook">
+          </a>
+          <a href="#" class="social-img-btn">
+            <img src="../Assets/HomePage/instagram.png" alt="Instagram">
+          </a>
+          <a href="#" class="social-img-btn">
+            <img src="../Assets/HomePage/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <span>📞</span>
+          <p>+63 912 345 6789</p>
+        </div>
+        <div class="contact-item">
+          <span>✉</span>
+          <p>furrytales@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <span>📍</span>
+          <p>123 Paw Street, Hope City</p>
+        </div>
+        <div class="contact-item">
+          <span>🕐</span>
+          <p>Mon - Sat | 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-section footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Get updates on rescues, events, and ways to help.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email" class="newsletter-input">
+          <button class="newsletter-btn">➤</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+});
+
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navMenu.classList.remove('open'));
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    const offset = navbar.offsetHeight + 8;
+    window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+  });
+});
+
+document.querySelectorAll('.fav').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const active = btn.classList.toggle('liked');
+    btn.textContent = active ? '♥' : '♡';
+  });
+});
+
+const cards = Array.from(document.querySelectorAll('.card'));
+const noResults = document.getElementById('noResults');
+const filterType   = document.getElementById('filterType');
+const filterAge    = document.getElementById('filterAge');
+const filterSize   = document.getElementById('filterSize');
+const filterGender = document.getElementById('filterGender');
+const filterSearch = document.getElementById('filterSearch');
+const filterSort   = document.getElementById('filterSort');
+const grid         = document.getElementById('cardsGrid');
+
+function applyFilters() {
+  const type   = filterType.value;
+  const age    = filterAge.value;
+  const size   = filterSize.value;
+  const gender = filterGender.value;
+  const search = filterSearch.value.trim().toLowerCase();
+  const sort   = filterSort.value;
+
+  let visible = cards.filter(card => {
+    if (type   && card.dataset.type   !== type)   return false;
+    if (age    && card.dataset.age    !== age)     return false;
+    if (size   && card.dataset.size   !== size)    return false;
+    if (gender && card.dataset.gender !== gender)  return false;
+    if (search && !card.dataset.name.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  if (sort === 'name') {
+    visible.sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
+  }
+
+  cards.forEach(c => (c.style.display = 'none'));
+  visible.forEach(c => (c.style.display = ''));
+  visible.forEach(c => grid.appendChild(c));
+  noResults.style.display = visible.length === 0 ? 'block' : 'none';
+}
+
+[filterType, filterAge, filterSize, filterGender, filterSort].forEach(el =>
+  el.addEventListener('change', applyFilters)
+);
+filterSearch.addEventListener('input', applyFilters);
+</script>
+</body>
+</html>

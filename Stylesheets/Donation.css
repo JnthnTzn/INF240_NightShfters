@@ -1,7 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
 
-/* NAV */
 nav {
     display: flex; align-items: center; justify-content: space-between;
     padding: 14px 40px; background: #fdf6ee;
@@ -21,7 +20,6 @@ nav {
 }
 .btn-contact:hover { background: #a0521e; }
 
-/* HERO */
 .hero {
     position: relative;
     height: 420px;
@@ -49,7 +47,6 @@ nav {
 .hero-overlay p { font-size: 0.92rem; color: #3b2a1a; line-height: 1.6; margin-bottom: 14px; }
 .hero-paw { width: 28px; opacity: 0.8; align-self: center; }
 
-/* APPEAL SECTION */
 .appeal-section {
     background: #a0522d;
     padding: 50px 60px;
@@ -79,7 +76,6 @@ nav {
     width: 140px; flex-shrink: 0; opacity: 0.9;
 }
 
-/* GIFT SECTION */
 .gift-section {
     background: #fdf0e0;
     padding: 60px 60px 70px;
@@ -122,7 +118,6 @@ nav {
     margin-top: auto;
 }
 
-/* FOOTER */
 .footer { background: #fdf6ee; border-top: 1px solid #e8d9c4; padding: 36px 60px 0; }
 .footer-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
 
