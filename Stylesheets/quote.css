@@ -1,0 +1,37 @@
+/* quote.css */
+
+.quote-section {
+    width: 100%;
+    min-width: 1440px;
+    height: 360px;
+    background-color: #e9ddc7;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-card {
+    width: 850px;
+    text-align: center;
+}
+
+.quote-text {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-style: italic;
+    line-height: 1.45;
+    color: #1f1710;
+
+    margin-bottom: 12px;
+}
+
+.quote-author {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-style: italic;
+    color: #3b2a1a;
+}

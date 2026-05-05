@@ -1,270 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurryTales</title>
-    <link rel="stylesheet" href="../Stylesheets/Index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Stylesheets/base.css">
+    <link rel="stylesheet" href="../Stylesheets/navbar.css">
+    <link rel="stylesheet" href="../Stylesheets/hero.css">
+    <link rel="stylesheet" href="../Stylesheets/stats.css">
+    <link rel="stylesheet" href="../Stylesheets/pets.css">
+    <link rel="stylesheet" href="../Stylesheets/quote.css">
+    <link rel="stylesheet" href="../Stylesheets/features.css">
+    <link rel="stylesheet" href="../Stylesheets/footer.css">
+    <link rel="stylesheet" href="../Stylesheets/responsive.css">
 </head>
+
 <body>
+    <div class="page-wrapper">
 
-    <nav>
-        <div class="logo">
-            <img src="../Assets/HomePage/Logo.png" alt="FurryTales Logo">
-            <div class="logo-text">
-                <span>Furry Tales</span>
-                <span>~ Where Every Paw Has a Story ~</span>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="../Assets/HomePage/logo.png" alt="main logo">
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Adopt</a></li>
-            <li><a href="Rescue.html">Rescue</a></li>
-            <li><a href="Donation.html">Donate</a></li>
-            <li><a href="#">Collaborate</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="FurTips.html">Fur Tips</a></li>
-            <li><a href="#">Stories</a></li>
-            <li><a href="#">Events</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#">Adopt</a></li>
+                <li><a href="Rescue.html">Rescue</a></li>
+                <li><a href="Donation.html">Donate</a></li>
+                <li><a href="#">Collaborate</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="FurTips.html">Fur Tips</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
 
-        <div class="nav-right">
-            <button class="btn-contact">Contact Us</button>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-left">
-            <h1>Furry Tales</h1>
-            <h2>Where Every Paw Has a Story</h2>
-            <div class="tagline">🤍 <em>Giving words to the hearts that cannot speak.</em></div>
-            <p>
-                We are a community that rescues, heals, and
-                <span>re</span>-homes animals in need. Together, let's write
-                their happy ending.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn-adopt"><img class="hero-btn-icon" src="../Assets/HomePage/Home.png" alt="Adopt"> Adopt</button>
-                <button class="btn-rescue"><img class="hero-btn-icon" src="../Assets/HomePage/siren.png" alt="Rescue"> Be Their Voice (Rescue)</button>
-                <button class="btn-donate"><img class="hero-btn-icon" src="../Assets/HomePage/handy.png" alt="Donate"> Donate Now</button>
+            <div class="nav-contact">
+                <a href="contact-item" class="contact-btn">
+                    <img src="../Assets/HomePage/contact ears.png" alt="Contact Us">
+                </a>
             </div>
-        </div>
+        </nav>
 
-        <div class="hero-right">
-            <img src="../Assets/HomePage/Home.png" alt="Cat and Dog">
-        </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-left">
+                <div class="hero-titles">
+                    <h1>Furry Tales</h1>
+                    <h2>Where Every Paw Has a Story</h2>
+                </div>
 
-        <svg class="wave" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#fbf2e7" d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z"/>
-        </svg>
-    </section>
+                <div class="tagline">
+                    <img src="../Assets/HomePage/subline.png" alt="subline">
+                    <p>We are a community that rescues, heals, and re-homes animals in need. Together, let's write
+                        their happy ending.</p>
+                </div>
 
-    <svg class="section-wave section-wave-to-stats" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#e9ddc7" d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z"/>
-    </svg>
+                <div class="hero-buttons">
+                    <button class="btn-adopt"><img class="hero-btn-icon" src="../Assets/HomePage/home.png" alt="Adopt"> Adopt
+                    </button>
+                    <button class="btn-rescue"><img class="hero-btn-icon" src="../Assets/HomePage/siren.png" alt="Rescue"> Be
+                        Their Voice (Rescue)</button>
+                    <button class="btn-donate"><img class="hero-btn-icon" src="../Assets/HomePage/handy.png" alt="Donate"> Donate
+                        Now</button>
+                </div>
+            </div>
 
-    <section class="stats-section">
-        <div class="stats-grid">
-            <article class="stat-card">
-                <div class="stat-icon">🐾</div>
-                <p class="stat-number">2,180+</p>
-                <p class="stat-label">Animals Rescued</p>
-            </article>
-            <article class="stat-card">
-                <div class="stat-icon">🏡</div>
-                <p class="stat-number">1,245+</p>
-                <p class="stat-label">Fur Friends for Adoption</p>
-            </article>
-            <article class="stat-card">
-                <div class="stat-icon">📅</div>
-                <p class="stat-number">328+</p>
-                <p class="stat-label">Animal Welfare Missions</p>
-            </article>
-        </div>
-    </section>
+            <div class="hero-right">
+                <img src="../Assets/HomePage/sidepic.svg" alt="Happy pets">
+            </div>
+        </section>
 
-    <svg class="section-wave section-wave-to-pets" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#fbf2e7" d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z"/>
-    </svg>
-
-    <section class="pets-section">
-        <div class="section-heading">
-            <h2>They’re waiting for their story to change.</h2>
-            <a href="#" class="view-all">View all →</a>
-        </div>
-
-        <div class="pet-grid">
-            <article class="pet-card">
-                <div class="pet-image"><div class="pet-image-placeholder">🐶</div></div>
-                <div class="pet-info">
-                    <div class="pet-title">
-                        <h3>Milo</h3>
-                        <span>Dog</span>
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-icon">
+                        <img src="../Assets/HomePage/handpaw.png" alt="Animals rescued">
                     </div>
-                    <p class="pet-meta">1 Year Old • Male</p>
-                    <p class="pet-location">Downtown Shelter</p>
-                    <p class="pet-description">Playful, Friendly, Affectionate</p>
-                    <button class="btn-profile">View Profile</button>
-                </div>
-            </article>
-            <article class="pet-card">
-                <div class="pet-image"><div class="pet-image-placeholder">🐱</div></div>
-                <div class="pet-info">
-                    <div class="pet-title">
-                        <h3>Luna</h3>
-                        <span>Cat</span>
+                    <p class="stat-number">50</p>
+                    <p class="stat-label">Animals Rescued</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">
+                        <img src="../Assets/HomePage/homecare.png" alt="Fur friends for adoption">
                     </div>
-                    <p class="pet-meta">4 Months • Female</p>
-                    <p class="pet-location">Paws Rescue Center</p>
-                    <p class="pet-description">Curious, Sweet, Gentle</p>
-                    <button class="btn-profile">View Profile</button>
-                </div>
-            </article>
-            <article class="pet-card">
-                <div class="pet-image"><div class="pet-image-placeholder">🐕</div></div>
-                <div class="pet-info">
-                    <div class="pet-title">
-                        <h3>Rocky</h3>
-                        <span>Dog</span>
+                    <p class="stat-number">1,245+</p>
+                    <p class="stat-label">Fur Friends for Adoption</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">
+                        <img src="../Assets/HomePage/announcements.png" alt="Animal Welfare Missions">
                     </div>
-                    <p class="pet-meta">1 Year • Male</p>
-                    <p class="pet-location">Happy Tails Shelter</p>
-                    <p class="pet-description">Loyal, Smart, Protective</p>
-                    <button class="btn-profile">View Profile</button>
-                </div>
-            </article>
-            <article class="pet-card">
-                <div class="pet-image"><div class="pet-image-placeholder">🐈</div></div>
-                <div class="pet-info">
-                    <div class="pet-title">
-                        <h3>Coco</h3>
-                        <span>Cat</span>
+                    <p class="stat-number">328+</p>
+                    <p class="stat-label">Animal Welfare Missions</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pets Section -->
+        <section class="pets-section">
+            <div class="section-heading">
+                <h2>They’re waiting for their story to change.</h2>
+                <a href="#" class="view-all">View all →</a>
+            </div>
+
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <div class="pet-image">
+                        <img src="../Assets/HomePage/luchi.png" alt="Luchi">
                     </div>
-                    <p class="pet-meta">8 Months • Female</p>
-                    <p class="pet-location">City Animal Home</p>
-                    <p class="pet-description">Calm, Independent, Loving</p>
-                    <button class="btn-profile">View Profile</button>
+                    <div class="pet-info">
+                        <div class="pet-title">
+                            <h3>Luchi</h3>
+                            <span>Dog</span>
+                        </div>
+                        <p class="pet-meta">4 Year Old • Female</p>
+                        <p class="pet-location">Downtown Shelter</p>
+                        <p class="pet-description">Playful, Friendly, Affectionate</p>
+                        <button class="btn-profile">View Profile</button>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <div class="pet-image">
+                        <img src="../Assets/HomePage/nash.png" alt="Nash">
+                    </div>
+                    <div class="pet-info">
+                        <div class="pet-title">
+                            <h3>Nash</h3>
+                            <span>Dog</span>
+                        </div>
+                        <p class="pet-meta">7 Year Old • Male</p>
+                        <p class="pet-location">Paws Rescue Center</p>
+                        <p class="pet-description">Curious, Sweet, Gentle</p>
+                        <button class="btn-profile">View Profile</button>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <div class="pet-image">
+                        <img src="../Assets/HomePage/sun.png" alt="Sun sun">
+                    </div>
+                    <div class="pet-info">
+                        <div class="pet-title">
+                            <h3>Sun sun</h3>
+                            <span>Cat</span>
+                        </div>
+                        <p class="pet-meta">1 Year • Male</p>
+                        <p class="pet-location">Happy Tails Shelter</p>
+                        <p class="pet-description">Loyal, Smart, Protective</p>
+                        <button class="btn-profile">View Profile</button>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <div class="pet-image">
+                        <img src="../Assets/HomePage/chow.png" alt="Chaw chaw">
+                    </div>
+                    <div class="pet-info">
+                        <div class="pet-title">
+                            <h3>Chaw chaw</h3>
+                            <span>Dog</span>
+                        </div>
+                        <p class="pet-meta">8 Months • Female</p>
+                        <p class="pet-location">City Animal Home</p>
+                        <p class="pet-description">Calm, Independent, Loving</p>
+                        <button class="btn-profile">View Profile</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="quote-card">
+                <p class="quote-text">“Animals speak, but only to those who know how to listen.”</p>
+                <p class="quote-author">- Orhan Pamuk</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="feature-section">
+            <div class="feature-cards">
+                <article class="feature-card">
+                    <img class="feature-image" src="../Assets/HomePage/adopt.png" alt="Adopt">
+                    <h3>Adopt</h3>
+                    <p>Find your new best friend and give them a forever home.</p>
+                    <a href="#">Learn More →</a>
+                </article>
+
+                <article class="feature-card">
+                    <img class="feature-image" src="../Assets/HomePage/donate.png" alt="Donate">
+                    <h3>Donate</h3>
+                    <p>Support our rescues through donations or by giving supplies.</p>
+                    <a href="#">Learn More →</a>
+                </article>
+
+                <article class="feature-card">
+                    <img class="feature-image" src="../Assets/HomePage/collaboration.png" alt="Collaboration">
+                    <h3>Collaborate</h3>
+                    <p>We partner with NGOs, vet clinics, and kind organizations.</p>
+                    <a href="#">Learn More →</a>
+                </article>
+
+                <article class="feature-card">
+                    <img class="feature-image" src="../Assets/HomePage/volunteer.png" alt="Volunteer">
+                    <h3>Volunteer</h3>
+                    <p>Be part of our mission. Many hands, many more lives saved.</p>
+                    <a href="#">Learn More →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-section footer-logo">
+                    <div class="footer-logo-content">
+                        <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="#" class="social-img-btn">
+                            <img src="../Assets/HomePage/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-img-btn">
+                            <img src="../Assets/HomePage/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-img-btn">
+                            <img src="../Assets/HomePage/tiktok.png" alt="TikTok">
+                        </a>
+                    </div>
                 </div>
-            </article>
-        </div>
-    </section>
 
-    <section class="quote-section">
-        <div class="quote-card">
-            <p class="quote-text">“Animals speak. But only to those who know how to listen.”</p>
-            <p class="quote-author">- Orhan Pamuk</p>
-        </div>
-    </section>
+                <div class="footer-section footer-contact">
+                    <h4>Contact Us</h4>
 
-    <section class="feature-section">
-        <div class="feature-cards">
-            <article class="feature-card">
-                <img class="feature-image" src="../Assets/HomePage/homecare.png" alt="Adopt">
-                <h3>Adopt</h3>
-                <p>Find your new best friend and give them a forever home.</p>
-                <a href="#">Learn More →</a>
-            </article>
-            <article class="feature-card">
-                <img class="feature-image" src="../Assets/HomePage/announcements.png" alt="Donate">
-                <h3>Donate</h3>
-                <p>Support our rescues through donations or by giving supplies.</p>
-                <a href="#">Learn More →</a>
-            </article>
-            <article class="feature-card">
-                <img class="feature-image" src="../Assets/HomePage/lauret2.png" alt="Collaborate">
-                <h3>Collaborate</h3>
-                <p>We partner with NGOs, vet clinics, and kind organizations.</p>
-                <a href="#">Learn More →</a>
-            </article>
-            <article class="feature-card">
-                <img class="feature-image" src="../Assets/HomePage/handpaw.png" alt="Volunteer">
-                <h3>Volunteer</h3>
-                <p>Be part of our mission. Many hands, many more lives saved.</p>
-                <a href="#">Learn More →</a>
-            </article>
-            <article class="feature-card">
-                <img class="feature-image" src="../Assets/HomePage/storybook.png" alt="Stories">
-                <h3>Stories</h3>
-                <p>Every rescue has a story. Read their journeys of hope.</p>
-                <a href="#">Learn More →</a>
-            </article>
-        </div>
-    </section>
-
-    <svg class="section-wave section-wave-to-footer" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#f5ede0" d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z"/>
-    </svg>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section footer-logo">
-                <div class="footer-logo-content">
-                    <img src="../Assets/HomePage/Logo.png" alt="FurryTales Logo">
-                    <h3>Furry Tales</h3>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <p>+63 912 345 6789</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>✉</span>
+                        <p>furrytales@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <p>123 Paw Street, Hope City</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>🕐</span>
+                        <p>Mon - Sat | 9:00 AM - 5:00 PM</p>
+                    </div>
                 </div>
-                <div class="footer-socials">
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">📷</a>
-                    <a href="#" class="social-icon">♪</a>
-                    <a href="#" class="social-icon">✉</a>
+
+                <div class="footer-section footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on rescues, events, and ways to help.</p>
+
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button class="newsletter-btn">➤</button>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="footer-section footer-links">
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Adopt</a></li>
-                        <li><a href="#">Rescue 911</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Collaborate</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Furry Tales. All rights reserved.</p>
             </div>
+        </footer>
 
-            <div class="footer-section footer-contact">
-                <h4>Contact Us</h4>
-                <div class="contact-item">
-                    <span>📞</span>
-                    <p>+63 912 345 6789</p>
-                </div>
-                <div class="contact-item">
-                    <span>✉</span>
-                    <p>furrytales@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <span>📍</span>
-                    <p>123 Paw Street, Hope City</p>
-                </div>
-                <div class="contact-item">
-                    <span>🕐</span>
-                    <p>Mon - Sat | 9:00 AM - 5:00 PM</p>
-                </div>
-            </div>
-
-            <div class="footer-section footer-newsletter">
-                <h4>Newsletter</h4>
-                <p>Get updating on rescues, avails, and ways to help.</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Your email" class="newsletter-input">
-                    <button class="newsletter-btn">→</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Furry Tales. All rights reserved.</p>
-        </div>
-    </footer>
-
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,103 @@
+/* navbar.css */
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    background-color: #e8dcc8;
+    border-bottom: 2px solid #d4c4a8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 15px rgba(69, 51, 31, 0.3);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* LEFT SIDE: LOGO */
+.nav-logo {
+    width: 320px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    height: 160px;
+    width: auto;
+    display: block;
+}
+
+/* CENTER: NAV LINKS */
+.nav-links {
+    width: 820px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    flex-shrink: 0;
+}
+
+.nav-links li {
+    flex-shrink: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b2a1a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #7a5c3a;
+}
+
+/* RIGHT SIDE: CONTACT BUTTON */
+.nav-contact {
+    width: 220px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    flex-shrink: 0;
+}
+
+.contact-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact-btn img {
+    height: 70px;
+    width: auto;
+    display: block;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-btn:hover img {
+    transform: scale(1.08);
+    filter: drop-shadow(0 5px 8px rgba(59, 42, 26, 0.35));
+}

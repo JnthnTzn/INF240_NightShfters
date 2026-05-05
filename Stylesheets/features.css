@@ -1,0 +1,95 @@
+/* features.css */
+
+.feature-section {
+    width: 100%;
+    min-width: 1440px;
+    height: 430px;
+    background-color: #ead4ac;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-cards {
+    width: 1000px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 55px;
+}
+.feature-card {
+    width: 230px;
+    height: 310px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.feature-card:not(:first-child)::before {
+    content: "";
+    position: absolute;
+
+    left: -28px;
+    top: 40px;
+
+    width: 2px;
+    height: 150px;
+
+    background-color: rgba(122, 92, 58, 0.25);
+    border-radius: 10px;
+}
+
+/* ICON */
+.feature-image {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+/* TITLE */
+.feature-card h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #3b2a1a;
+
+    margin-bottom: 18px;
+}
+
+/* DESCRIPTION */
+.feature-card p {
+    width: 210px;
+    min-height: 78px;   /* keeps all Learn More aligned */
+
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #5c4630;
+
+    margin-bottom: 22px;
+}
+
+/* LEARN MORE */
+.feature-card a {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #a2642a;
+    text-decoration: none;
+
+    margin-top: 0 auto;   /* pushes Learn More to same bottom position */
+}
+
+.feature-card a:hover {
+    color: #6f421d;
+}
