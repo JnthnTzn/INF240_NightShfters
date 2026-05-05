@@ -47,7 +47,7 @@ nav {
     width: 120px; height: 2px; background: #3b2a1a; margin-bottom: 14px;
 }
 .hero-overlay p { font-size: 0.92rem; color: #3b2a1a; line-height: 1.6; margin-bottom: 14px; }
-.hero-paw { width: 28px; opacity: 0.8; }
+.hero-paw { width: 28px; opacity: 0.8; align-self: center; }
 
 /* APPEAL SECTION */
 .appeal-section {
@@ -136,6 +136,7 @@ nav {
     color: #fff; display: flex; align-items: center; justify-content: center;
     text-decoration: none; font-size: 0.85rem;
 }
+.social-icon img { width: 18px; height: 18px; object-fit: contain; }
 
 .footer-links { display: flex; gap: 40px; }
 .footer-column h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
@@ -146,7 +147,7 @@ nav {
 
 .footer-contact h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
 .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.contact-item span { font-size: 0.9rem; }
+.contact-item span, .contact-item img { font-size: 0.9rem; width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
 .contact-item p { font-size: 0.82rem; color: #5a3e28; }
 
 .footer-newsletter { min-width: 180px; }
