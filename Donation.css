@@ -1,0 +1,170 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
+
+/* NAV */
+nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 40px; background: #fdf6ee;
+    border-bottom: 1px solid #e8d9c4; position: sticky; top: 0; z-index: 100;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { height: 52px; }
+.logo-text { display: flex; flex-direction: column; }
+.logo-text span:first-child { font-family: 'Dancing Script', cursive; font-size: 1.4rem; color: #7a4a1e; }
+.logo-text span:last-child { font-size: 0.65rem; color: #a07850; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { text-decoration: none; color: #3b2a1a; font-size: 0.92rem; }
+.nav-links a:hover { color: #c1692a; }
+.btn-contact {
+    background: #c1692a; color: #fff; border: none;
+    padding: 9px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9rem;
+}
+.btn-contact:hover { background: #a0521e; }
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    background: #e8c9a0;
+}
+.hero-dog {
+    position: absolute; right: 0; top: 0;
+    width: 65%; height: 100%; object-fit: cover; object-position: center top;
+}
+.hero-overlay {
+    position: absolute; left: 0; top: 0;
+    width: 42%; height: 100%;
+    background: linear-gradient(to right, rgba(232,201,160,1) 70%, rgba(232,201,160,0));
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 40px 40px 40px 60px; z-index: 2;
+}
+.hero-overlay h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem; color: #3b2a1a; line-height: 1.15; margin-bottom: 10px;
+}
+.hero-underline {
+    width: 120px; height: 2px; background: #3b2a1a; margin-bottom: 14px;
+}
+.hero-overlay p { font-size: 0.92rem; color: #3b2a1a; line-height: 1.6; margin-bottom: 14px; }
+.hero-paw { width: 28px; opacity: 0.8; }
+
+/* APPEAL SECTION */
+.appeal-section {
+    background: #a0522d;
+    padding: 50px 60px;
+    position: relative;
+}
+.appeal-inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.qr-img {
+    width: 260px; flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+.appeal-text { flex: 1; }
+.appeal-text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem; color: #fdf6ee; line-height: 1.2; margin-bottom: 18px;
+}
+.appeal-text p { font-size: 0.92rem; color: #fdf6ee; line-height: 1.8; margin-bottom: 14px; text-align: justify; }
+.appeal-bold { font-weight: 700 !important; }
+.double-heart {
+    width: 140px; flex-shrink: 0; opacity: 0.9;
+}
+
+/* GIFT SECTION */
+.gift-section {
+    background: #fdf0e0;
+    padding: 60px 60px 70px;
+    text-align: center;
+}
+.gift-section > h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6rem; color: #3b2a1a; margin-bottom: 44px;
+}
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.gift-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px 28px 28px;
+    display: flex; flex-direction: column; align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.gift-icon-wrap {
+    width: 90px; height: 90px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+}
+.gift-icon-wrap.pink  { background: #f5c6cc; }
+.gift-icon-wrap.blue  { background: #c8d8e8; }
+.gift-icon-wrap.teal  { background: #a8cfd4; }
+.gift-icon-wrap img { width: 50px; height: 50px; object-fit: contain; }
+.gift-card h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem; color: #3b2a1a; margin-bottom: 12px;
+}
+.gift-card p { font-size: 0.85rem; color: #5a3e28; line-height: 1.6; text-align: center; margin-bottom: 20px; }
+.gift-amount {
+    font-size: 0.85rem; font-weight: 700; color: #c1692a;
+    margin-top: auto;
+}
+
+/* FOOTER */
+.footer { background: #fdf6ee; border-top: 1px solid #e8d9c4; padding: 36px 60px 0; }
+.footer-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+
+.footer-logo { display: flex; flex-direction: column; gap: 16px; min-width: 160px; }
+.footer-logo-content { display: flex; align-items: center; gap: 10px; }
+.footer-logo-content img { height: 60px; }
+.footer-logo-content h3 { font-family: 'Dancing Script', cursive; font-size: 1.4rem; color: #7a4a1e; }
+.footer-socials { display: flex; gap: 10px; }
+.social-icon {
+    width: 34px; height: 34px; border-radius: 50%; background: #3b2a1a;
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-size: 0.85rem;
+}
+
+.footer-links { display: flex; gap: 40px; }
+.footer-column h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
+.footer-column ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-column ul li a { text-decoration: none; font-size: 0.82rem; color: #5a3e28; }
+.footer-column ul li a:hover { color: #c1692a; }
+.footer-column:last-child ul { margin-top: 28px; }
+
+.footer-contact h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
+.contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.contact-item span { font-size: 0.9rem; }
+.contact-item p { font-size: 0.82rem; color: #5a3e28; }
+
+.footer-newsletter { min-width: 180px; }
+.footer-newsletter h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: #3b2a1a; }
+.footer-newsletter p { font-size: 0.78rem; color: #5a3e28; margin-bottom: 12px; line-height: 1.5; }
+.newsletter-form { display: flex; }
+.newsletter-input {
+    flex: 1; padding: 8px 12px; border: 1px solid #d4c4b0;
+    border-radius: 8px 0 0 8px; font-size: 0.82rem; outline: none;
+    font-family: 'Lato', sans-serif; background: #fff;
+}
+.newsletter-btn {
+    padding: 8px 14px; background: #4a6741; color: #fff; border: none;
+    border-radius: 0 8px 8px 0; cursor: pointer; font-size: 1rem;
+}
+.newsletter-btn:hover { background: #3a5232; }
+
+.footer-bottom {
+    text-align: center; padding: 16px 0; margin-top: 30px;
+    border-top: 1px solid #e8d9c4; font-size: 0.78rem; color: #a07850;
+}
