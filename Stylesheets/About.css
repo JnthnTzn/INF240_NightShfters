@@ -1,0 +1,107 @@
+/* --- GLOBAL STYLES --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
+
+/* --- NAVIGATION (Matches Donation) --- */
+nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 40px; background: #fdf6ee;
+    border-bottom: 1px solid #e8d9c4; position: sticky; top: 0; z-index: 100;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { height: 52px; }
+.logo-text { display: flex; flex-direction: column; }
+.logo-text span:first-child { font-family: 'Dancing Script', cursive; font-size: 1.4rem; color: #7a4a1e; }
+.logo-text span:last-child { font-size: 0.65rem; color: #a07850; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { text-decoration: none; color: #3b2a1a; font-size: 0.92rem; }
+.nav-links a:hover { color: #c1692a; }
+.btn-contact {
+    background: #c1692a; color: #fff; border: none;
+    padding: 9px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9rem;
+}
+.btn-contact:hover { background: #a0521e; }
+
+/* --- MAIN ABOUT LAYOUT --- */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 60px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-left { display: flex; justify-content: center; }
+.about-pets-img { width: 100%; max-width: 450px; height: auto; object-fit: contain; }
+
+.about-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #6b431f;
+    margin-bottom: 30px;
+}
+
+/* --- THE 2x2 GRID --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    gap: 40px 60px;
+}
+
+/* Grid Dividers */
+.about-grid::before {
+    content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
+    width: 1px; background: #e8d9c4;
+}
+.about-grid::after {
+    content: ""; position: absolute; top: 50%; left: 0; right: 0;
+    height: 1px; background: #e8d9c4;
+}
+
+.about-card { padding: 10px; }
+.card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+.card-header h2 { font-family: 'Dancing Script', cursive; font-size: 2rem; color: #7a4a1e; }
+.card-header img { width: 35px; height: auto; }
+.about-card p { font-size: 0.9rem; line-height: 1.6; color: #5c4630; text-align: justify; }
+
+/* --- FOOTER (Matches Donation) --- */
+.footer { background: #fdf6ee; border-top: 1px solid #e8d9c4; padding: 36px 60px 0; margin-top: 60px; }
+.footer-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+.footer-logo { display: flex; flex-direction: column; gap: 16px; min-width: 160px; }
+.footer-logo-content { display: flex; align-items: center; gap: 10px; }
+.footer-logo-content img { height: 60px; }
+.footer-logo-content h3 { font-family: 'Dancing Script', cursive; font-size: 1.4rem; color: #7a4a1e; }
+.footer-socials { display: flex; gap: 10px; }
+.social-icon {
+    width: 34px; height: 34px; border-radius: 50%; background: #3b2a1a;
+    display: flex; align-items: center; justify-content: center;
+}
+.social-icon img { width: 18px; height: 18px; }
+
+.footer-links { display: flex; gap: 40px; }
+.footer-column h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
+.footer-column ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-column ul li a { text-decoration: none; font-size: 0.82rem; color: #5a3e28; }
+.footer-column:last-child ul { margin-top: 28px; }
+
+.footer-contact h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: #3b2a1a; }
+.contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.contact-item img { width: 18px; height: 18px; }
+.contact-item p { font-size: 0.82rem; color: #5a3e28; }
+
+.footer-newsletter { min-width: 180px; }
+.footer-newsletter h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: #3b2a1a; }
+.footer-newsletter p { font-size: 0.78rem; color: #5a3e28; margin-bottom: 12px; }
+.newsletter-form { display: flex; }
+.newsletter-input {
+    flex: 1; padding: 8px 12px; border: 1px solid #d4c4b0;
+    border-radius: 8px 0 0 8px; font-size: 0.82rem; outline: none;
+}
+.newsletter-btn {
+    padding: 8px 14px; background: #4a6741; color: #fff; border: none;
+    border-radius: 0 8px 8px 0; cursor: pointer;
+}
+.footer-bottom { text-align: center; padding: 16px 0; margin-top: 30px; border-top: 1px solid #e8d9c4; font-size: 0.78rem; color: #a07850; }
