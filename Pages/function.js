@@ -1,22 +1,18 @@
-// ===== STICKY NAVBAR SHADOW =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 10);
 });
 
-// ===== MOBILE NAV TOGGLE =====
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-// Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const target = document.querySelector(anchor.getAttribute('href'));
@@ -27,7 +23,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== FAVORITES TOGGLE =====
 document.querySelectorAll('.fav-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const active = btn.classList.toggle('active');
@@ -35,7 +30,6 @@ document.querySelectorAll('.fav-btn').forEach(btn => {
   });
 });
 
-// ===== PET CARD FILTER =====
 const cards = Array.from(document.querySelectorAll('.pet-card'));
 const noResults = document.getElementById('noResults');
 
@@ -70,8 +64,6 @@ function applyFilters() {
 
   cards.forEach(c => (c.style.display = 'none'));
   visible.forEach(c => (c.style.display = ''));
-
-  // Re-append in sorted order
   visible.forEach(c => grid.appendChild(c));
 
   noResults.style.display = visible.length === 0 ? 'block' : 'none';

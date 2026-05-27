@@ -1,8 +1,6 @@
-/* --- GLOBAL STYLES --- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
 
-/* --- NAVIGATION (Matches Donation) --- */
 nav {
     display: flex; align-items: center; justify-content: space-between;
     padding: 14px 40px; background: #fdf6ee;
@@ -22,7 +20,6 @@ nav {
 }
 .btn-contact:hover { background: #a0521e; }
 
-/* --- MAIN ABOUT LAYOUT --- */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -43,7 +40,6 @@ nav {
     margin-bottom: 30px;
 }
 
-/* --- THE 2x2 GRID --- */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,7 +47,6 @@ nav {
     gap: 40px 60px;
 }
 
-/* Grid Dividers */
 .about-grid::before {
     content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
     width: 1px; background: #e8d9c4;
@@ -67,7 +62,6 @@ nav {
 .card-header img { width: 35px; height: auto; }
 .about-card p { font-size: 0.9rem; line-height: 1.6; color: #5c4630; text-align: justify; }
 
-/* --- FOOTER (Matches Donation) --- */
 .footer { background: #fdf6ee; border-top: 1px solid #e8d9c4; padding: 36px 60px 0; margin-top: 60px; }
 .footer-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
 .footer-logo { display: flex; flex-direction: column; gap: 16px; min-width: 160px; }
