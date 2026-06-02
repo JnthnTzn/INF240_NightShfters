@@ -1,147 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fur Tips – Furry Tales</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Stylesheets/FurTips.css">
-  <link rel="stylesheet" href="../Stylesheets/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fur Tips | Furry Tales</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Lato:wght@400;500;600;700;900&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../Stylesheets/navbar.css">
+    <link rel="stylesheet" href="../Stylesheets/furtips.css">
+    <link rel="stylesheet" href="../Stylesheets/footer.css">
 </head>
+
 <body>
 
-  <nav>
-    <div class="logo">
-      <img src="../Assets/HomePage/Logo.png" alt="FurryTales Logo">
-      <div class="logo-text">
-        <span>Furry Tales</span>
-        <span>~ Where Every Paw Has a Story ~</span>
-      </div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="../Index.html">Home</a></li>
-      <li><a href="Adoption.html">Adopt</a></li>
-      <li><a href="Rescue.html">Rescue</a></li>
-      <li><a href="Donation.html">Donate</a></li>
-      <li><a href="collab.html">Collaborate</a></li>
-      <li><a href="About.html">About Us</a></li>
-      <li><a href="FurTips.html" class="active">Fur Tips</a></li>
-    </ul>
-    <button class="btn-contact">Contact Us</button>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="nav-logo">
+            <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/Adoption.html">Adopt</a></li>
+            <li><a href="../pages/Rescue.html">Rescue</a></li>
+            <li><a href="../pages/Donation.html">Donate</a></li>
+            <li><a href="../pages/Collaborate.html">Collaborate</a></li>
+            <li><a href="../pages/About.html">About Us</a></li>
+            <li><a href="../pages/FurTips.html">Fur Tips</a></li>
+        </ul>
+        <a href="#footer" class="contact-btn">Contact Us</a>
+    </nav>
 
-  <section class="hero">
-    <div class="hero-badge">Pet Care Guide</div>
-    <h1>Fur Tips <span class="heart">♡</span></h1>
-    <p>Simple care tips to keep your furry friends<br>happy, healthy, and loved.</p>
+    <!-- Fur Tips Page -->
+    <main class="fur-tips-page">
 
-    <span class="decor d1">🐾</span>
-    <span class="decor d2">🐾</span>
-    <span class="decor d3">💛</span>
-    <span class="decor d4">🩷</span>
-    <span class="decor d5">🐾</span>
-    <span class="decor d6">💛</span>
-  </section>
+        <!-- Hero / Title Section -->
+        <section class="fur-tips-hero">
+            <img src="../Assets/FurTipsPage/small-paw.png" alt="" class="tips-decor decor-paw-left">
+            <img src="../Assets/FurTipsPage/heart copy.png" alt="" class="tips-decor decor-heart-left">
+            <img src="../Assets/FurTipsPage/small-paw.png" alt="" class="tips-decor decor-paw-right">
+            <img src="../Assets/FurTipsPage/heart copy.png" alt="" class="tips-decor decor-heart-right">
 
-  <section class="cards-section">
-    <div class="cards-grid">
+            <h1>Fur Tips Library</h1>
+            <p>Simple guides to help you care for rescued and adopted pets with confidence.</p>
 
-      <div class="card">
-        <div class="card-icon-wrap"><img src="../Assets/FurTipsPage/pet-bowl.png" alt="Proper Nutrition"></div>
-        <h3>Proper Nutrition</h3>
-        <div class="divider">♡</div>
-        <p>Give your pets balanced meals suited to their age, breed, and size. Always provide fresh, clean water and avoid harmful foods like chocolate, onions, and grapes.</p>
-        <img class="card-pet" src="../Assets/FurTipsPage/cateat.jpg" alt="Proper Nutrition">
-      </div>
+            <div class="tips-divider">
+                <span></span>
+                <img src="../Assets/FurTipsPage/small-paw.png" alt="">
+                <span></span>
+            </div>
+        </section>
 
-      <div class="card">
-        <div class="card-icon-wrap"><img src="../Assets/FurTipsPage/bathtub-cleaning.png" alt="Regular Grooming"></div>
-        <h3>Regular Grooming</h3>
-        <div class="divider">♡</div>
-        <p>Keep your pet clean and comfortable with regular baths, brushing, and nail trimming. Good hygiene prevents infections and keeps their coat shiny and healthy.</p>
-        <img class="card-pet" src="../Assets/FurTipsPage/dogshower.jpg" alt="Regular Grooming">
-      </div>
 
-      <div class="card">
-        <div class="card-icon-wrap"><img src="../Assets/FurTipsPage/dog-toy.png" alt="Daily Exercise"></div>
-        <h3>Daily Exercise</h3>
-        <div class="divider">♡</div>
-        <p>Pets need regular physical activity to stay fit and mentally stimulated. Daily walks, fetch, or indoor playtime can boost their mood and overall wellbeing.</p>
-        <img class="card-pet" src="../Assets/FurTipsPage/dogexer.jpeg" alt="Pet Exercise">
-      </div>
+        <!-- Care Categories -->
+        <section class="tips-category-section">
 
-      <div class="card">
-        <div class="card-icon-wrap"><img src="../Assets/FurTipsPage/animal-care.png" alt="Love & Attention"></div>
-        <h3>Love &amp; Attention</h3>
-        <div class="divider">♡</div>
-        <p>Spend quality time with your pet every single day. They thrive on affection and bonding — your presence makes them feel safe, secure, and truly loved.</p>
-        <img class="card-pet" src="../Assets/FurTipsPage/lovingpet.jpg" alt="Loving Pet">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="quote-section">
-    <div class="quote-box">
-      <div class="quote-decos">🐾 🐾 🐾</div>
-      <blockquote>"A well-cared-for pet is a happy companion for life."</blockquote>
-      <cite>— Furry Tales ♡</cite>
-    </div>
-  </section>
-
-  <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section footer-logo">
-                <div class="footer-logo-content">
-                    <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
-                    <h3>Furry Tales</h3>
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/nutrition.png" alt="Nutrition icon">
                 </div>
-                <div class="footer-socials">
-                    <a href="#" class="social-icon"><img src="../Assets/Footer/facebook.png" alt="Facebook"></a>
-                    <a href="#" class="social-icon"><img src="../Assets/Footer/instagram.png" alt="Instagram"></a>
-                    <a href="#" class="social-icon"><img src="../Assets/Footer/tiktok.png" alt="TikTok"></a>
-                    <a href="#" class="social-icon"><img src="../Assets/Footer/Gmail.png" alt="Gmail"></a>
+
+                <h2>Nutrition & Feeding</h2>
+                <p>Balanced meals, treats, and healthy habits.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="nutrition">→</button>
+            </article>
+
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/health.png" alt="Health and vet care icon">
+                </div>
+
+                <h2>Health & Vet Care</h2>
+                <p>Preventive care, vaccines, and when to seek help.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="health">→</button>
+            </article>
+
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/grooming.png" alt="Grooming icon">
+                </div>
+
+                <h2>Grooming & Hygiene</h2>
+                <p>Bathing, brushing, nail care, and more.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="grooming">→</button>
+            </article>
+
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/training.png" alt="Training icon">
+                </div>
+
+                <h2>Training & Behavior</h2>
+                <p>Positive training tips and behavior guidance.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="training">→</button>
+            </article>
+
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/safe-home.png" alt="Safe home icon">
+                </div>
+
+                <h2>Safe Home Setup</h2>
+                <p>Pet-proofing, safety, and comfort at home.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="safe-home">→</button>
+            </article>
+
+            <article class="tip-card">
+                <div class="tip-icon-circle">
+                    <img src="../Assets/FurTipsPage/adoption-adjustment.png" alt="Adoption adjustment icon">
+                </div>
+
+                <h2>Adoption Adjustment</h2>
+                <p>Helping your pet settle in and feel at home.</p>
+
+                <button class="tip-arrow-btn" type="button" data-tip="adjustment">→</button>
+            </article>
+
+        </section>
+
+
+        <!-- Featured Guide -->
+        <section class="featured-guide-section">
+
+            <div class="featured-guide-image">
+                <img src="../Assets/FurTipsPage/pet-guide.png" alt="Dog and cat sitting together">
+            </div>
+
+            <div class="featured-guide-content">
+                <p class="guide-label">Featured Guide</p>
+
+                <h2>First Week With an Adopted Pet</h2>
+                <p class="guide-intro">The first week sets the tone for a happy life together.</p>
+
+                <div class="guide-steps">
+
+                    <div class="guide-step">
+                        <span>1</span>
+                        <div>
+                            <h3>Give Them Time</h3>
+                            <p>Let your pet explore at their own pace.</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <span>2</span>
+                        <div>
+                            <h3>Keep It Simple</h3>
+                            <p>Stick to a routine for meals, potty, and rest.</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <span>3</span>
+                        <div>
+                            <h3>Offer Reassurance</h3>
+                            <p>Use gentle voice, affection, and positive moments.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="footer-section footer-links">
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="Adoption.html">Adopt</a></li>
-                        <li><a href="Rescue.html">Rescue 911</a></li>
-                        <li><a href="Donation.html">Donate</a></li>
-                        <li><a href="#">Collaborate</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <ul>
-                        <li><a href="About.html">About Us</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
+
+            <div class="featured-guide-action">
+                <button class="read-guide-btn" type="button" data-tip="first-week">Read Full Guide →</button>
             </div>
-            <div class="footer-section footer-contact">
-                <h4>Contact Us</h4>
-                <div class="contact-item"><img src="../Assets/Footer/Phone.png" alt="Phone"><p>+63 912 345 6789</p></div>
-                <div class="contact-item"><img src="../Assets/Footer/Gmail.png" alt="Email"><p>furrytales@gmail.com</p></div>
-                <div class="contact-item"><img src="../Assets/Footer/Location.png" alt="Location"><p>123 Paw Street, Hope City</p></div>
-                <div class="contact-item"><span>🕐</span><p>Mon - Sat | 9:00 AM - 5:00 PM</p></div>
+
+        </section>
+
+
+        <!-- Quick Reminders -->
+        <section class="quick-reminders-section">
+
+            <div class="quick-reminders-heading">
+                <img src="../Assets/FurTipsPage/small-paw.png" alt="">
+                <h2>Quick Reminders</h2>
             </div>
-            <div class="footer-section footer-newsletter">
-                <h4>Newsletter</h4>
-                <p>Get updates on rescues, events, and ways to help.</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Your email" class="newsletter-input">
-                    <button class="newsletter-btn">→</button>
-                </div>
+
+            <div class="quick-reminders-list">
+
+                <article class="reminder-item">
+                    <img src="../Assets/FurTipsPage/water.png" alt="Water bowl icon">
+                    <div>
+                        <h3>Fresh Water</h3>
+                        <p>Always keep clean, fresh water available.</p>
+                    </div>
+                </article>
+
+                <article class="reminder-item">
+                    <img src="../Assets/FurTipsPage/vet-check.png" alt="Vet check icon">
+                    <div>
+                        <h3>Regular Vet Check</h3>
+                        <p>Schedule routine checkups for a healthy pet.</p>
+                    </div>
+                </article>
+
+                <article class="reminder-item">
+                    <img src="../Assets/FurTipsPage/pet-food.png" alt="Pet food icon">
+                    <div>
+                        <h3>Slow Food Changes</h3>
+                        <p>Introduce new food gradually over 7 days.</p>
+                    </div>
+                </article>
+
+                <article class="reminder-item">
+                    <img src="../Assets/FurTipsPage/safety.png" alt="Safety icon">
+                    <div>
+                        <h3>Safe Environment</h3>
+                        <p>Remove hazards and keep poisons out of reach.</p>
+                    </div>
+                </article>
+
+                <article class="reminder-item">
+                    <img src="../Assets/FurTipsPage/heart.png" alt="Heart icon">
+                    <div>
+                        <h3>Patience & Love</h3>
+                        <p>Trust takes time. You’re their new world.</p>
+                    </div>
+                </article>
+
             </div>
+
+        </section>
+
+
+        <!-- Closing Note -->
+        <section class="fur-tips-closing">
+            <p>
+                <span>♥</span>
+                Every tip. Every step. A better life for every pet.
+                <span>♥</span>
+            </p>
+        </section>
+
+        <!-- Fur Tips Popup Modal -->
+<div class="tip-modal-overlay" id="tipModal">
+    <div class="tip-modal-card">
+
+        <button class="tip-modal-close" type="button" id="closeTipModal">×</button>
+
+        <div class="tip-modal-top">
+            <img src="" alt="" class="tip-modal-icon" id="modalIcon">
+            <p class="tip-modal-label" id="modalLabel">Fur Tips Guide</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+
+        <h2 id="modalTitle"></h2>
+
+        <p class="tip-modal-intro" id="modalIntro"></p>
+
+        <ul class="tip-modal-list" id="modalReminders"></ul>
+
+        <div class="tip-modal-note">
+            <h3>Why it matters</h3>
+            <p id="modalWhy"></p>
         </div>
-  </footer>
+
+    </div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section footer-logo">
+                    <div class="footer-logo-content">
+                        <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon"><img src="../Assets/Footer/facebook.png" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="../Assets/Footer/instagram.png" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="../Assets/Footer/tiktok.png" alt="TikTok"></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item"><img src="../Assets/Footer/Phone.png" alt="Phone"><p>+63 912 345 6789</p></div>
+                        <div class="contact-item"><img src="../Assets/Footer/Gmail.png" alt="Email"><p>furrytales@gmail.com</p></div>
+                        <div class="contact-item"><img src="../Assets/Footer/Location.png" alt="Location"><p>123 Paw Street, Hope City</p></div>
+                        <div class="contact-item"><span>🕐</span><p>Mon - Sat | 9:00 AM - 5:00 PM</p></div>
+                    </div>
+                    <div class="footer-section footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Get updates on rescues, events, and ways to help.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input">
+                            <button class="newsletter-btn">➤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+            </div>
+        </footer>
+
+    <!-- Fetch Navbar and Footer -->
+    <script src="../Pages/layout.js"></script>
+    <script src="../Pages/furtips.js"></script>
 
 </body>
 </html>

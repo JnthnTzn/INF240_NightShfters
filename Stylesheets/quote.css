@@ -1,35 +1,119 @@
 .quote-section {
-    width: 100%;
-    min-width: 1440px;
-    height: 360px;
-    background-color: #e9ddc7;
+    background-color: #e9ddc6;
+    padding: 90px 24px; /* 1st = top/bottom spacing, 2nd = left/right spacing */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: relative;
     overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .quote-card {
-    width: 850px;
+    position: relative;
+
+    max-width: 850px; /* 1st = maximum card width */
+    width: 100%; /* 1st = lets the card shrink on smaller screens */
+
+    background-color: #fffaf3;
+    border-radius: 28px; /* 1st = card corner roundness */
+
+    padding: 55px 80px; /* 1st = top/bottom spacing, 2nd = left/right spacing */
     text-align: center;
+    z-index: 2; /* 1st = keeps quote card above decorations */
+
+    box-shadow: 0 8px 22px rgba(59, 42, 26, 0.13); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+}
+
+.quote-card::before {
+    content: "“";
+    position: absolute;
+
+    top: 10px; /* 1st = distance from top */
+    left: 35px; /* 1st = distance from left */
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 110px; /* 1st = decorative quote mark size */
+    color: rgba(185, 128, 49, 0.18); /* rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
 }
 
 .quote-text {
-    font-family: Georgia, serif;
-    font-size: 42px;
-    font-style: italic;
-    line-height: 1.45;
-    color: #1f1710;
+    position: relative;
+    z-index: 1; /* 1st = keeps text above decorative quote mark */
 
-    margin-bottom: 12px;
+    font-family: 'caveat', serif;
+    font-size: 38px; /* 1st = quote text size */
+    font-style: italic;
+    font-weight: 600;
+
+    line-height: 1.35; /* 1st = space between quote lines */
+    color: #2f2116;
+
+    margin-bottom: 18px; /* 1st = space below quote */
 }
 
 .quote-author {
-    font-family: Georgia, serif;
-    font-size: 34px;
-    font-style: italic;
-    color: #3b2a1a;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; /* 1st = author text size */
+    font-weight: 600;
+    color: #7a5b3a;
+}
+
+.quote-decor {
+    position: absolute;
+    z-index: 1; /* 1st = puts decorations behind the quote card */
+    pointer-events: none; /* 1st = prevents decorations from blocking clicks */
+    opacity: 1.8; /* 1st = decoration transparency */
+}
+
+.decor-connectheart {
+    top: 50px; /* 1st = distance from top */
+    left: 10px; /* 1st = distance from left */
+    width: 400px; /* 1st = decoration size */
+    transform: rotate(-20deg); /* 1st = rotation angle */
+    opacity: 0.58; /* 1st = transparency */
+}
+
+.decor-storybook {
+    top: 250px; /* 1st = distance from top */
+    right: 80px; /* 1st = distance from right */
+    width: 300px; /* 1st = decoration size */
+    transform: rotate(25deg); /* 1st = rotation angle */
+    opacity: 0.28; /* 1st = transparency */
+}
+
+.quote-catdog {
+    position: absolute;
+    left: 450px; /* 1st = distance from right; negative value moves it outside to the right */
+    bottom: 5px; /* 1st = distance from bottom; negative value moves it lower */
+    width: 200px; /* 1st = decoration size */
+
+    transform: rotate(0deg); /* 1st = rotation angle */
+    opacity: 0.58; /* 1st = transparency */
+    z-index: 3; /* 1st = layer order */
+    pointer-events: none;
+}
+
+.quote-wave {
+    position: absolute;
+    left: 0; /* 1st = sticks the wave to the left side */
+    bottom: 0; /* 1st = sticks the wave to the bottom of the quote section */
+
+    width: 100%; /* 1st = full section width */
+    height: 85px; /* 1st = wave height */
+
+    line-height: 0;
+    z-index: 1; /* 1st = keeps the wave behind the quote card */
+    pointer-events: none; /* 1st = prevents the wave from blocking clicks */
+}
+
+.quote-wave svg {
+    width: 100%; /* 1st = full width of the wave */
+    height: 100%; /* 1st = full height of the wave */
+    display: block;
+}
+
+.quote-wave path {
+    fill: #ead4ac; /* 1st = wave color; should match the feature section background */
 }

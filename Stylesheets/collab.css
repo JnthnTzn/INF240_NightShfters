@@ -1,0 +1,488 @@
+/* ============================
+   Collaborate Page Base
+============================ */
+
+body {
+    margin: 0; /* controls outside browser spacing; 0 removes default page gap */
+    padding: 0; /* controls inside browser spacing; 0 removes default page padding */
+    font-family: 'Lato', sans-serif;
+    background-color: #fdfaf4;
+    color: #3b2a1a;
+}
+
+
+/* ============================
+   Hero Section
+============================ */
+
+.collab-hero {
+    width: 100%; /* controls hero width; 100% fills the page/container */
+    height: 355px; /* controls hero section height */
+    position: relative;
+    overflow: hidden;
+}
+
+.collab-hero-img {
+    width: 100%; /* controls image width; 100% fills the hero horizontally */
+    height: 100%; /* controls image height; 100% fills the hero vertically */
+    object-fit: cover;
+    object-position: center; /* 1st = horizontal focus, 2nd = vertical focus */
+    display: block;
+    filter: brightness(0.90) saturate(0.90); /* brightness: lower = darker, higher = brighter; saturate: lower = softer color, higher = stronger color */
+}
+
+.collab-hero-box {
+    position: absolute;
+    top: 58px; /* controls distance from the top of the hero section */
+    left: 140px; /* controls distance from the left side of the hero section */
+
+    width: 500px; /* controls cream box width */
+    height: 225px; /* controls cream box height */
+
+    padding: 24px 32px; /* 1st = top/bottom inside space, 2nd = left/right inside space */
+    box-sizing: border-box;
+
+    background-color: rgba(253, 248, 244, 0.78); /* rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    border-radius: 18px; /* controls how rounded the cream box corners are */
+    box-shadow: 0 8px 18px rgba(59, 42, 26, 0.18); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+}
+
+.hero-leaf {
+    position: absolute;
+    top: -1px; /* controls distance from the top of the cream box */
+    left: -50px; /* controls distance from the left side of the cream box */
+    width: 200px; /* controls leaf image size */
+    height: auto; /* keeps image height proportional to its width */
+    opacity: 0.82; /* controls visibility; lower = more transparent, higher = more solid */
+}
+
+.collab-hero-box h1 {
+    margin: 0; /* removes default heading spacing */
+    margin-left: 48px; /* pushes title away from the leaf decoration */
+    margin-top: 4px; /* controls space above the title */
+
+    font-family: 'Playlist Script', cursive;
+    font-size: 64px; /* controls main title size */
+    line-height: 0.88; /* controls vertical spacing between the title lines */
+    font-weight: 400;
+    color: #3b2a1a;
+}
+
+.hero-decor {
+    position: relative;
+    width: 330px; /* controls decoration row width */
+    height: 34px; /* controls decoration row height */
+    margin-left: 48px; /* aligns decoration with the title */
+    margin-top: -2px; /* controls space between title and underline */
+}
+
+.hero-line {
+    position: absolute;
+    left: 8px; /* controls underline horizontal position */
+    top: -100px; /* controls underline vertical position */
+    width: 350px; /* controls underline length */
+    height: auto; /* keeps image height proportional to its width */
+    opacity: 0.82; /* controls underline visibility; lower = lighter, higher = stronger */
+}
+
+.hero-paws {
+    position: absolute;
+    right: -10px; /* controls paw distance from the right side of decoration row */
+    top: -40px; /* controls paw vertical position */
+    width: 85px; /* controls paw image size */
+    height: auto; /* keeps image height proportional to its width */
+}
+
+.collab-hero-box p {
+    margin: 0; /* removes default paragraph spacing */
+    margin-left: 35px; /* aligns subtitle with the title */
+    margin-top: -6px; /* controls distance between subtitle and underline */
+
+    font-family: 'Playlist Script', cursive;
+    font-size: 21px; /* controls subtitle size */
+    color: #5f6424;
+}
+
+
+/* ============================
+   Collaboration Intro Strip
+============================ */
+
+.collab-intro-strip {
+    width: calc(100% - 72px); /* 1st value = full width, 2nd value = total left/right space removed */
+    margin: 14px auto 36px auto; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    padding: 10px 24px; /* 1st = top/bottom inside space, 2nd = left/right inside space */
+
+    background-color: #f1e5d2;
+    border-radius: 12px; /* controls strip corner roundness */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px; /* controls space between paw icon and text */
+
+    box-sizing: border-box;
+}
+
+.brown-paw {
+    width: 34px; /* controls brown paw icon size */
+    height: auto; /* keeps image height proportional to its width */
+}
+
+.collab-intro-strip p {
+    margin: 0; /* removes default paragraph spacing */
+    font-size: 18px; /* controls intro text size */
+    font-weight: 70;
+    color: #5a4736;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ============================
+   Recent News + Volunteer Area
+============================ */
+
+.collab-panels {
+    width: 100%; /* controls full section width */
+    padding: 18px 74px 16px 74px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    box-sizing: border-box;
+
+    background-color: #fdfaf4;
+
+    display: grid;
+    grid-template-columns: 390px 1fr; /* 1st = recent news width, 2nd = volunteer panel remaining width */
+    gap: 32px; /* controls space between recent news and volunteer form */
+}
+
+
+/* ============================
+   Recent News
+============================ */
+
+.recent-news h2 {
+    margin: 0 0 18px 0; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px; /* controls recent news title size */
+    color: #5f6424;
+}
+
+.news-card {
+    width: 100%; /* controls news card width; fills the recent news column */
+    min-height: 80px; /* controls minimum card height */
+    margin-bottom: 26px; /* controls space under each news card */
+    padding: 6px 14px 6px 6px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+
+    background-color: #ffffff;
+    border-radius: 18px; /* controls card corner roundness */
+    box-shadow: 0 8px 20px rgba(233, 221, 198, 0.18); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+
+    display: flex;
+    align-items: center;
+    gap: 12px; /* controls space between date badge and news text */
+
+    box-sizing: border-box;
+}
+
+.news-date {
+    width: 72px; /* controls date badge width */
+    height: 72px; /* controls date badge height */
+    border-radius: 16px; /* controls date badge corner roundness */
+    background-color: #f1e8df;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.news-date span {
+    font-size: 16px; /* controls month text size */
+    font-weight: 600;
+    color: #3b2a1a;
+}
+
+.news-date strong {
+    font-size: 18px; /* controls date number size */
+    color: #3b2a1a;
+}
+
+.news-info h3 {
+    margin: 0 0 4px 0; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    font-size: 13px; /* controls news title text size */
+    font-weight: 700;
+    color: #3b2a1a;
+}
+
+.news-info p {
+    margin: 0; /* removes default paragraph spacing */
+    font-size: 12px; /* controls news description size */
+    line-height: 1.35; /* controls vertical spacing between description lines */
+    color: #3b2a1a;
+}
+
+
+/* ============================
+   Volunteer Form Panel
+============================ */
+
+.volunteer-panel {
+    min-height: 360px; /* controls minimum form panel height */
+    padding: 34px 48px 36px 48px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+
+    background-color: #ffffff;
+    border-radius: 18px; /* controls volunteer panel corner roundness */
+    box-shadow: 0 8px 20px rgba(233, 221, 198, 0.16); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+
+    box-sizing: border-box;
+}
+
+.volunteer-panel h2 {
+    margin: 0 0 24px 0; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px; /* controls volunteer heading size */
+    color: #5f6424;
+}
+
+.volunteer-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1st = left form column, 2nd = right form column */
+    gap: 28px; /* controls space between form columns */
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer-form label {
+    margin-bottom: 5px; /* controls space between label and field */
+    font-size: 18px; /* controls label text size */
+    color: #000000;
+}
+
+.volunteer-form input,
+.volunteer-form select {
+    height: 44px; /* controls input/select height */
+    margin-bottom: 18px; /* controls space below each field */
+    padding: 0 12px; /* 1st = top/bottom inside space, 2nd = left/right inside space */
+
+    border: 1px solid #3b2a1a; /* 1st = border thickness, 2nd = border style, 3rd = border color */
+    border-radius: 7px; /* controls field corner roundness */
+
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; /* controls field text size */
+    color: #3b2a1a;
+
+    box-sizing: border-box;
+}
+
+.volunteer-form input::placeholder {
+    color: #777777;
+}
+
+.volunteer-form button {
+    height: 52px; /* controls button height */
+    margin-top: 12px; /* controls space above button */
+    padding: 0 22px; /* 1st = top/bottom inside space, 2nd = left/right inside space */
+
+    background-color: #c46f0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* controls button corner roundness */
+
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; /* controls button text size */
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px; /* controls space between button text and paw icon */
+
+    transition: background-color 0.25s ease, transform 0.25s ease; /* 1st = property animated, 2nd = duration, 3rd = motion style */
+}
+
+.volunteer-form button:hover {
+    background-color: #616135;
+    transform: translateY(-2px); /* 1st = horizontal movement, 2nd = vertical movement */
+}
+
+.white-paw {
+    width: 30px; /* controls white paw icon size */
+    height: auto; /* keeps image height proportional to its width */
+}
+
+.volunteer-response {
+    grid-column: 1 / -1; /* makes the message stretch across both form columns */
+    margin: 6px 0 0 0; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left spacing */
+    padding: 14px 18px; /* 1st = top/bottom inside space, 2nd = left/right inside space */
+
+    background-color: #fffaf3;
+    border: 1px solid #d8c6ac; /* 1px = border thickness */
+    border-radius: 14px; /* controls how rounded the message box corners are */
+
+    color: #5f6424;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; /* controls message text size */
+    line-height: 1.5; /* controls spacing between text lines */
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(59, 42, 26, 0.10); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+
+    display: none;
+}
+
+.volunteer-response.show {
+    display: block;
+}
+
+
+/* ============================
+   Collaboration Invitation
+============================ */
+
+.collab-invitation {
+    width: calc(100% - 148px); /* 1st value = full width, 2nd value = total left/right space removed */
+    height: 200px; /* allows height to adjust based on content */
+    margin: 0 auto 36px auto; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    padding: 30px 48px 30px 28px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+
+    background-color: #f8ecd9;
+    border-radius: 16px; /* controls invitation section corner roundness */
+
+    display: grid;
+    grid-template-columns: 1.05fr 1px 0.95fr; /* 1st = left area, 2nd = divider, 3rd = right area */
+    gap: 36px; /* controls space between left content, divider, and right content */
+
+    box-sizing: border-box;
+}
+
+.invitation-left {
+    position: relative;
+    padding-left: 150px; /* controls reserved space for the olive branch before the text */
+    display: flex;
+    align-items: center;
+}
+
+.invitation-leaf {
+    position: absolute;
+    left: -90px; /* controls olive branch distance from the left side */
+    top: 50%; /* controls vertical position; 50% means middle of the section */
+    transform: translateY(-50%); /* 1st = horizontal movement, 2nd = vertical movement */
+    width: 320px; /* controls olive branch size */
+    height: auto; /* keeps the image proportion correct */
+}
+
+.invitation-message {
+    max-width: 470px; /* controls how wide the text area can be */
+}
+
+.invitation-message h2 {
+    margin: 0; /* removes default heading spacing */
+    font-family: 'Georgia', serif;
+    font-size: 31px; /* controls main invitation heading size */
+    line-height: 1.35; /* controls vertical spacing between heading lines */
+    color: #5f6424;
+}
+
+.invitation-divider {
+    width: 1px; /* controls divider thickness */
+    height: 100%; /* controls divider height; 100% fills the invitation section */
+    background-color: rgba(95, 100, 36, 0.55); /* rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+}
+
+.invitation-right {
+    position: relative;
+    padding-right: 18px; /* controls right paragraph spacing from decoration */
+}
+
+.invitation-right p {
+    margin: 0; /* removes default paragraph spacing */
+    font-size: 18px; /* controls right paragraph text size */
+    line-height: 1.65; /* controls vertical spacing between paragraph lines */
+    color: #000000;
+}
+
+.line-heart {
+    position: absolute;
+    right: 8px; /* controls distance from the right side of the right panel */
+    bottom: -14px; /* controls distance from the bottom of the right panel */
+    width: 145px; /* controls heart line decoration size */
+    height: auto; /* keeps image height proportional to its width */
+}
+
+.collab-contact-note {
+    width: 100%; /* 1st = full section width */
+    background-color: #fdf8f4;
+    padding: 28px 0 24px 0; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+
+    display: flex;
+    justify-content: center;
+}
+
+.collab-contact-note p {
+    width: 92%; /* 1st = note width based on screen size */
+    max-width: 1200px; /* 1st = maximum note width */
+    
+    background-color: #efe4d3;
+    color: #3b2a1a;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 17px; /* 1st = text size */
+    line-height: 1.5; /* 1st = space between text lines */
+    text-align: center;
+
+    padding: 16px 28px; /* 1st = top/bottom spacing, 2nd = left/right spacing */
+    border-radius: 18px; /* 1st = corner roundness */
+
+    box-shadow: 0 4px 10px rgba(59, 42, 26, 0.10); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+}
+
+
+/* ============================
+   Responsive Adjustments
+============================ */
+
+@media (max-width: 900px) {
+    .collab-hero {
+        height: 330px; /* controls hero height on smaller screens */
+    }
+
+    .collab-hero-box {
+        top: 52px; /* controls cream box top position on smaller screens */
+        left: 24px; /* controls cream box left position on smaller screens */
+        width: 420px; /* controls cream box width on smaller screens */
+        height: 200px; /* controls cream box height on smaller screens */
+    }
+
+    .collab-hero-box h1 {
+        font-size: 58px; /* controls title size on smaller screens */
+    }
+
+    .collab-panels {
+        grid-template-columns: 1fr; /* changes panels from two columns into one column */
+        padding: 24px 24px 24px 24px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    }
+
+    .volunteer-form {
+        grid-template-columns: 1fr; /* changes form fields from two columns into one column */
+    }
+
+    .collab-invitation {
+        width: calc(100% - 48px); /* 1st value = full width, 2nd value = total left/right space removed */
+        grid-template-columns: 1fr; /* changes invitation layout into one column */
+        padding: 28px 28px 34px 28px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    }
+
+    .invitation-divider {
+        display: none;
+    }
+
+    .invitation-left {
+        align-items: flex-start;
+    }
+}

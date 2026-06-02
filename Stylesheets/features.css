@@ -1,6 +1,7 @@
+/* features.css */
+
 .feature-section {
-    width: 100%;
-    min-width: 1440px;
+    /*width: 100%;*/
     height: 430px;
     background-color: #ead4ac;
 
@@ -10,23 +11,21 @@
 }
 
 .feature-cards {
-    width: 1000px;
-
+    flex-wrap: wrap;
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: center;    
     gap: 55px;
 }
 .feature-card {
-    width: 230px;
+    width: 1 1 230px;
     height: 310px;
-
     text-align: center;
-
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
 }
 
@@ -44,6 +43,7 @@
     border-radius: 10px;
 }
 
+/* ICON */
 .feature-image {
     width: 85px;
     height: 85px;
@@ -53,6 +53,7 @@
     margin-bottom: 20px;
 }
 
+/* TITLE */
 .feature-card h3 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 26px;
@@ -62,6 +63,7 @@
     margin-bottom: 18px;
 }
 
+/* DESCRIPTION */
 .feature-card p {
     width: 210px;
     min-height: 78px;   /* keeps all Learn More aligned */
@@ -74,16 +76,21 @@
     margin-bottom: 22px;
 }
 
+/* LEARN MORE */
 .feature-card a {
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 17px; /* 1st = text size */
     font-weight: 700;
     color: #a2642a;
     text-decoration: none;
 
-    margin-top: 0 auto;   /* pushes Learn More to same bottom position */
+    display: inline-block;
+    margin-top: 0;
+
+    transition: color 0.25s ease, transform 0.25s ease; /* 1st = color animation, 2nd = movement animation */
 }
 
 .feature-card a:hover {
     color: #6f421d;
+    transform: translateY(-5px); /* 1st = vertical movement; negative value moves upward */
 }

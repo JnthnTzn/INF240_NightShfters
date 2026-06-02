@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborate</title>
+
+    <!-- Google Fonts -->
+    <link href="https:/fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https:/fonts.googleapis.com/css2?family=Playlist+Script&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../Stylesheets/collab.css">
+    <link rel="Stylesheet" href="../Stylesheets/navbar.css">
+    <link rel="Stylesheet" href="../Stylesheets/footer.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a class="nav-logo">
+            <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/Adoption.html">Adopt</a></li>
+            <li><a href="../pages/Rescue.html">Rescue</a></li>
+            <li><a href="../pages/Donation.html">Donate</a></li>
+            <li><a href="../pages/Collaborate.html">Collaborate</a></li>
+            <li><a href="../pages/About.html">About Us</a></li>
+            <li><a href="../pages/FurTips.html">Fur Tips</a></li>
+        </ul>
+        <a href="#footer" class="contact-btn">Contact Us</a>
+    </nav>
+   
+    
+  <!-- Collaborate Hero Section -->
+<section class="collab-hero">
+    <img src="../Assets/CollabPage/collabvolunteer.png" alt="Volunteers helping shelter dogs" class="collab-hero-img">
+
+    <div class="collab-hero-box">
+        <img src="../Assets/CollabPage/leaf-spring.png" alt="" class="hero-leaf">
+
+        <h1>Collaborate<br>With Us</h1>
+
+        <div class="hero-decor">
+            <img src="../Assets/CollabPage/hero-line.png" alt="" class="hero-line">
+            <img src="../Assets/CollabPage/hero-paws.png" alt="" class="hero-paws">
+        </div>
+
+        <p>Stronger together. Happier tomorrows.</p>
+    </div>
+</section>
+
+
+<!-- Collaboration Intro Strip -->
+<section class="collab-intro-strip">
+    <img src="../Assets/CollabPage/brown-paw.png" alt="" class="brown-paw">
+    <p>We partner with organizations, groups, and communities to create meaningful change for animals.</p>
+</section>
+
+
+<!-- Recent News and Volunteer Section -->
+<section class="collab-panels">
+
+    <!-- Recent News -->
+    <div class="recent-news">
+        <h2>Recent News</h2>
+
+        <div class="news-card">
+            <div class="news-date">
+                <strong>May</strong>
+                <span>18</span>
+            </div>
+
+            <div class="news-info">
+                <h3>Dog Training 101</h3>
+                <p>A beginner-friendly training session for pet owners to learn basic commands, behavior tips, and responsible dog handling.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-date">
+                <strong>April</strong>
+                <span>1</span>
+            </div>
+
+            <div class="news-info">
+                <h3>Libreng Kapon</h3>
+                <p>A free spay and neuter event that promoted responsible pet ownership and helped reduce stray animal overpopulation.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-date">
+                <strong>Jan</strong>
+                <span>20</span>
+            </div>
+
+            <div class="news-info">
+                <h3>Fun Raising for a Cause</h3>
+                <p>A community fundraising activity that brought animal lovers together to support rescue efforts, pet care, and future welfare programs.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Volunteer Form -->
+    <div class="volunteer-panel">
+        <h2>Become a Volunteer</h2>
+
+        <form class="volunteer-form" id="volunteerForm">
+            <div class="form-column">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-column">
+                <label for="availability">Availability</label>
+                <select id="availability" name="availability" required>
+                    <option selected disabled value="">Select availability</option>
+                    <option>Weekdays</option>
+                    <option>Weekends</option>
+                    <option>Both weekdays and weekends</option>
+                </select>
+
+                <label for="help-type">How would you like to help</label>
+                <select id="help-type" name="help-type" required>
+                    <option selected disabled value="">Select an option</option>
+                    <option>Event support</option>
+                    <option>Animal care</option>
+                    <option>Donation drives</option>
+                    <option>Community outreach</option>
+                    <option>Social media support</option>
+                    <option>Photography or documentation</option>
+                </select>
+
+                <button type="submit">
+                    I’d Like to Volunteer
+                    <img src="../Assets/CollabPage/white-paw.png" alt="" class="white-paw">
+                </button>
+            </div>
+
+            <p id="volunteerResponse" class="volunteer-response"></p>
+        </form>
+    </div>
+
+</section>
+
+
+<!-- Collaboration Invitation Section -->
+<section class="collab-invitation">
+    <div class="invitation-left">
+        <img src="../Assets/CollabPage/olive-branch.png" alt="" class="invitation-leaf">
+
+        <div class="invitation-message">
+            <p>Have an idea for an animal welfare event?</p>
+            <h2>Partner with Furry Tales and let’s bring it to life together.</h2>
+        </div>
+    </div>
+
+    <div class="invitation-divider"></div>
+
+    <div class="invitation-right">
+        <p>
+            We welcome NGOs, shelters, vet clinics, schools, brands, and community groups to collaborate with us on meaningful initiatives that support animal welfare, responsible pet care, and community kindness.
+        </p>
+
+        <img src="../Assets/CollabPage/line-heart.png" alt="" class="line-heart">
+    </div>
+</section>
+
+<section class="collab-contact-note">
+    <p>
+        For partnership, volunteer, or support inquiries, you can contact Furry Tales using the details below.
+    </p>
+</section>
+
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-logo">
+                <div class="footer-logo-content">
+                    <img src="../Assets/HomePage/logo.png" alt="FurryTales Logo">
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><img src="../Assets/Footer/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="../Assets/Footer/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="../Assets/Footer/tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item"><img src="../Assets/Footer/Phone.png" alt="Phone"><p>+63 912 345 6789</p></div>
+                    <div class="contact-item"><img src="../Assets/Footer/Gmail.png" alt="Email"><p>furrytales@gmail.com</p></div>
+                    <div class="contact-item"><img src="../Assets/Footer/Location.png" alt="Location"><p>123 Paw Street, Hope City</p></div>
+                    <div class="contact-item"><span>🕐</span><p>Mon - Sat | 9:00 AM - 5:00 PM</p></div>
+                </div>
+                <div class="footer-section footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on rescues, events, and ways to help.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button class="newsletter-btn">➤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+        </div>
+    </footer>
+
+   <script src="javascript\layout.js"></script>
+    <script>
+        const volunteerForm = document.getElementById("volunteerForm");
+        const volunteerResponse = document.getElementById("volunteerResponse");
+        const fullNameInput = document.getElementById("full-name");
+
+        volunteerForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const volunteerName = fullNameInput.value.trim();
+
+        volunteerResponse.textContent = `Thank you for your kindness, ${volunteerName}! Your volunteer form has been received. The Furry Tales team will contact you soon with the next steps. 🐾`;
+
+        volunteerResponse.classList.add("show");
+
+        volunteerForm.reset();
+});
+    </script>
+    
+</body>
+</html>
