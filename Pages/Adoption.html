@@ -5,38 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Furry Tales Adoption</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../Stylesheets/Adoption.css">
   <link rel="stylesheet" href="../Stylesheets/navbar.css">
   <link rel="stylesheet" href="../Stylesheets/footer.css">
 </head>
 <body>
 
-  <!-- FLOATING BACKGROUND -->
-  <div class="bg-floats" id="bgFloats"></div>
+  
 
-  <!-- ================= HEADER ================= -->
+  <nav class="navbar">
+      <a class="nav-logo">
+          <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
+      </a>
+      <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/Adoption.html">Adopt</a></li>
+          <li><a href="../pages/Rescue.html">Rescue</a></li>
+          <li><a href="../pages/Donation.html">Donate</a></li>
+          <li><a href="../pages/Collaborate.html">Collaborate</a></li>
+          <li><a href="../pages/About.html">About Us</a></li>
+          <li><a href="../pages/FurTips.html">Fur Tips</a></li>
+      </ul>
+      <a href="#footer" class="contact-btn">Contact Us</a>
+  </nav>
 
-  <header>
-    <nav class="navbar">
-        <a class="nav-logo">
-            <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/Adoption.html">Adopt</a></li>
-            <li><a href="../pages/Rescue.html">Rescue</a></li>
-            <li><a href="../pages/Donation.html">Donate</a></li>
-            <li><a href="../pages/Collaborate.html">Collaborate</a></li>
-            <li><a href="../pages/About.html">About Us</a></li>
-            <li><a href="../pages/FurTips.html">Fur Tips</a></li>
-        </ul>
-        <a href="#footer" class="contact-btn">Contact Us</a>
-    </nav>
-  </header>
-
-  <!-- ================= HERO ================= -->
+  
 
   <section class="hero">
 
@@ -57,7 +52,7 @@
 
     </div>
 
-    <!-- FILTERS -->
+    
 
     <div class="filters reveal">
       <div class="custom-select" id="animalSelect">
@@ -107,7 +102,7 @@
       </div>
     </div>
 
-    <!-- PETS -->
+    
 
     <div class="pets-grid">
 
@@ -178,7 +173,7 @@
 
     </div>
 
-    <!-- PROCESS -->
+    
 
     <div class="process reveal">
 
@@ -226,7 +221,7 @@
 
   </section>
 
-  <!-- FOOTER -->
+  
 
   <footer class="footer">
       <div class="footer-container">
@@ -264,20 +259,45 @@
       </div>
   </footer>
 
-  <!-- PROFILE MODAL -->
-  <div class="modal-overlay" id="profileModalOverlay" role="presentation">
-    <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle" tabindex="-1" id="profileModal">
-      <button class="profile-close" id="profileModalClose" aria-label="Close profile">✕</button>
-      <div class="profile-hero">
+  
+  <div class="modal-overlay" id="profileModalOverlay">
+    <div class="profile-modal" id="profileModal">
+      <button class="profile-close" id="profileModalClose">✕</button>
+      <div class="profile-left">
         <img id="profileModalImage" src="" alt="" />
+        <a href="../Pages/Donation.html" class="btn-meet">📞 Meet Me in Person</a>
       </div>
-      <div class="profile-body">
-        <h3 id="profileModalTitle">Pet Name</h3>
-        <div class="profile-meta" id="profileModalMeta">Meta</div>
-        <div class="profile-info" id="profileModalInfo"></div>
-        <div class="profile-description" id="profileModalDescription"></div>
-        <div class="profile-traits" id="profileModalTraits"></div>
+      <div class="profile-right">
+        <div class="profile-header">
+          <h2 id="profileModalTitle"></h2>
+          <span class="profile-status" id="profileModalStatus"></span>
+        </div>
+        <div class="profile-story-preview">
+          <span class="story-label">&#9829; My Story</span>
+          <p class="story-preview-quote" id="profileModalQuotePreview"></p>
+          <button class="btn-view-more" id="openStoryBtn">View more &rarr;</button>
+        </div>
+        <div class="profile-gender-age" id="profileModalGenderAge"></div>
+        <div class="profile-grid" id="profileModalGrid"></div>
+        <div class="profile-donate">
+          <p>Make a difference &mdash; your support helps animals like this find their forever home.</p>
+          <a href="../Pages/Donation.html" class="btn-donate-modal">Donate Now</a>
+        </div>
+        <div class="profile-actions">
+          <button class="btn-adopt-modal">&#x1F43E; Adopt Me</button>
+          <button class="btn-share" id="shareStoryBtn">&#x1F4E4; Share My Story</button>
+        </div>
       </div>
+    </div>
+  </div>
+
+  
+  <div class="modal-overlay" id="storyModalOverlay">
+    <div class="story-modal" id="storyModal">
+      <button class="profile-close" id="storyModalClose">✕</button>
+      <h2 id="storyModalTitle"></h2>
+      <p class="story-quote" id="storyModalQuote"></p>
+      <p class="story-text" id="storyModalText"></p>
     </div>
   </div>
 

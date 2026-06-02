@@ -1,4 +1,4 @@
-/* hero.css */
+
 @font-face {
     font-family: 'Playlist Script';
     src: url('../../Fonts/Playlist\ Script.otf') format('opentype');
@@ -14,12 +14,12 @@
 
 .hero {
     display: flex;
-    justify-content: space-between; /* 1st = align items starting from the left instead of horizontally centered */
-    align-items: center; /* 1st = align items starting from the top instead of vertically centered */
+    justify-content: space-between; 
+    align-items: center; 
 
-    width: 100%; /* 1st = full section width */
-    min-height: 710px; /* 1st = minimum section height */
-    padding: 45px 70px 120px 55px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    width: 100%; 
+    min-height: 710px; 
+    padding: 45px 70px 120px 55px; 
 
     background-color: #fdf8f4;
 
@@ -27,11 +27,11 @@
     overflow: hidden;
 }
 
-/* LEFT SIDE TEXT */
+
 .hero-left {
-    margin-top: -150px; /* 1st = pushes the whole left content downward */
-    z-index: 2; /* 1st = layer order */
-    max-width: 560px; /* 1st = maximum width of the left content area */
+    margin-top: -150px; 
+    z-index: 2; 
+    max-width: 560px; 
 }
 
 .hero-title {
@@ -53,7 +53,7 @@
     margin-top: 10px;
 }
 
-/* TAGLINE */
+
 .tagline img {
         width: 510px;
         height: auto;
@@ -62,7 +62,7 @@
         margin-top: -15px;
 }
 
-/* DESCRIPTION */
+
 .tagline p {
     width: 330px;
     color: #3b2a1a;
@@ -74,7 +74,7 @@
 }
 
 
-/* BUTTONS */
+
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -82,25 +82,25 @@
 }
 
 .hero-buttons a {
-    height: 65px; /* controls button height */
+    height: 65px; 
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* controls space between icon and text */
+    gap: 8px; 
 
     border: none;
-    border-radius: 9px; /* controls button corner roundness */
+    border-radius: 9px; 
 
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 18px; /* controls button text size */
+    font-size: 18px; 
     font-weight: 600;
-    text-decoration: none; /* removes underline from link buttons */
+    text-decoration: none; 
 
     cursor: pointer;
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease; /* controls hover animation speed */
+    transition: transform 0.25s ease, box-shadow 0.25s ease; 
 }
 
 .btn-adopt {
@@ -125,69 +125,69 @@
 }
 
 .hero-buttons a:hover {
-    transform: translateY(-3px); /* moves the button upward on hover */
-    box-shadow: 0 8px 15px rgba(59, 42, 26, 0.25); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(59, 42, 26, 0.25); 
 }
 
 .hero-decor {
     position: absolute;
-    pointer-events: none; /* 1st = prevents the decoration from blocking clicks */
-    z-index: 0; /* 1st = layer order */
-    opacity: 0.35; /* 1st = transparency */
+    pointer-events: none; 
+    z-index: 0; 
+    opacity: 0.35; 
 }
 
 .decor-carriage {
-    top: -50px; /* 1st = distance from top */
-    left: 18%; /* 1st = distance from left */
-    width: clamp(70px, 300vw, 600px); /* clamp: 1st = smallest size, 2nd = responsive size, 3rd = largest size */
+    top: -50px; 
+    left: 18%; 
+    width: clamp(70px, 300vw, 600px); 
      transform: rotate(20deg);
 }
 
 .decor-heart {
-    top: -50px; /* 1st = distance from top */
-    left: 70%; /* 1st = distance from left */
-    width: clamp(70px, 300vw, 600px); /* clamp: 1st = smallest size, 2nd = responsive size, 3rd = largest size */
-    z-index: 0; /* 1st = layer order; higher value appears above the carriage */
+    top: -50px; 
+    left: 70%; 
+    width: clamp(70px, 300vw, 600px); 
+    z-index: 0; 
      
 }
 
 .decor-rainbow {
-    top: 70px; /* 1st = distance from top */
-    left: -150px; /* 1st = distance from left */
-    width: clamp(300px, 500vw, 1400px); /* clamp: 1st = smallest size, 2nd = responsive size, 3rd = largest size */
+    top: 70px; 
+    left: -150px; 
+    width: clamp(300px, 500vw, 1400px); 
     transform: rotate(-20deg);
 }
 
 .hero-right {
-    /*width: 520px;  1st = half of the hero width */
+    
     z-index: 1;
-    margin-top: 185px; /* 1st = moves the image container down/up */
-    margin-left: 100px; /* 1st = moves the image container left/right */
+    margin-top: 185px; 
+    margin-left: 100px; 
 }
 
 .hero-right img {
     
-    width: 100%; /* 1st = image fills the width of its container */
-    height: auto; /* 1st = keeps image proportion correct */
+    width: 100%; 
+    height: auto; 
 
-    transform: scale(1.8); /* 1st = image size multiplier; 1.2 means 120% size */
-    transform-origin: bottom center; /* 1st = horizontal scaling point, 2nd = vertical scaling point */
+    transform: scale(1.8); 
+    transform-origin: bottom center; 
 }
 
 .hero-wave {
     position: absolute;
-    left: 0; /* 1st = distance from the left side */
-    bottom: -220px; /* 1st = distance from the bottom side; negative value removes tiny gaps */
-    width: 100%; /* 1st = full width of the hero */
+    left: 0; 
+    bottom: -220px; 
+    width: 100%; 
     height: 310px;
-    z-index: 3; /* 1st = layer order; higher value appears above the image */
+    z-index: 3; 
     pointer-events: none;
     margin-bottom: 360px;
 }
 
 .hero-wave svg {
-    width: 100%; /* 1st = full width of the wave container */
-    height: 100%; /* 1st = full height of the wave container */
+    width: 100%; 
+    height: 100%; 
     display: block;
 }
 

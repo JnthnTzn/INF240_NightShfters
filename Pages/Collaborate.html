@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collaborate</title>
 
-    <!-- Google Fonts -->
+    
     <link href="https:/fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
     <link href="https:/fonts.googleapis.com/css2?family=Playlist+Script&display=swap" rel="stylesheet">
 
-    <!-- CSS Files -->
+    
     <link rel="stylesheet" href="../Stylesheets/collab.css">
     <link rel="Stylesheet" href="../Stylesheets/navbar.css">
     <link rel="Stylesheet" href="../Stylesheets/footer.css">
+    <link rel="stylesheet" href="../Stylesheets/scroll-reveal.css">
 </head>
 
 <body>
-    <!-- Navigation -->
+    
     <nav class="navbar">
         <a class="nav-logo">
             <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
@@ -34,11 +35,11 @@
     </nav>
    
     
-  <!-- Collaborate Hero Section -->
+  
 <section class="collab-hero">
-    <img src="../Assets/CollabPage/collabvolunteer.png" alt="Volunteers helping shelter dogs" class="collab-hero-img">
+    <img src="../Assets/CollabPage/collabvolunteer.png" alt="Volunteers helping shelter dogs" class="collab-hero-img reveal-right">
 
-    <div class="collab-hero-box">
+    <div class="collab-hero-box reveal-left">
         <img src="../Assets/CollabPage/leaf-spring.png" alt="" class="hero-leaf">
 
         <h1>Collaborate<br>With Us</h1>
@@ -53,18 +54,18 @@
 </section>
 
 
-<!-- Collaboration Intro Strip -->
-<section class="collab-intro-strip">
+
+<section class="collab-intro-strip reveal">
     <img src="../Assets/CollabPage/brown-paw.png" alt="" class="brown-paw">
     <p>We partner with organizations, groups, and communities to create meaningful change for animals.</p>
 </section>
 
 
-<!-- Recent News and Volunteer Section -->
+
 <section class="collab-panels">
 
-    <!-- Recent News -->
-    <div class="recent-news">
+    
+    <div class="recent-news reveal-left">
         <h2>Recent News</h2>
 
         <div class="news-card">
@@ -105,8 +106,8 @@
     </div>
 
 
-    <!-- Volunteer Form -->
-    <div class="volunteer-panel">
+    
+    <div class="volunteer-panel reveal-right">
         <h2>Become a Volunteer</h2>
 
         <form class="volunteer-form" id="volunteerForm">
@@ -154,8 +155,8 @@
 </section>
 
 
-<!-- Collaboration Invitation Section -->
-<section class="collab-invitation">
+
+<section class="collab-invitation reveal">
     <div class="invitation-left">
         <img src="../Assets/CollabPage/olive-branch.png" alt="" class="invitation-leaf">
 
@@ -182,7 +183,7 @@
     </p>
 </section>
 
-    <!-- Footer -->
+    
    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section footer-logo">
@@ -219,6 +220,7 @@
         </div>
     </footer>
 
+   <script src="../Pages/scroll-reveal.js"></script>
    <script src="javascript\layout.js"></script>
     <script>
         const volunteerForm = document.getElementById("volunteerForm");

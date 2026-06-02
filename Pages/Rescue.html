@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Stylesheets/Rescue.css">
     <link rel="stylesheet" href="../Stylesheets/footer.css">
-    <link rel="stylesheet" href="../Stylesheets/navbar.css">
+    <link rel="stylesheet" href="../Stylesheets/navbar.css">    
+    <link rel="stylesheet" href="../Stylesheets/scroll-reveal.css">
 </head>
 <body>
     <nav class="navbar">
@@ -27,79 +28,78 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-left">
+        <img src="../Assets/RescuePage/rescuepup.png" alt="pup" class="hero-img reveal-right">
+
+        <div class="hero-box reveal-left">
             <h1>Be Their Voice</h1>
             <p>Your kindness can change a life.<br>Report an animal in need and help us rescue, heal, and rehome.</p>
 
-            <div class="form-card">
+            <form id="rescueForm" class="form-card">
                 <div class="form-grid">
                     <div class="form-field">
                         <label>
-                            <img src="../Assets/RescuePage/name.png" alt="Name">
-                            Your Name
+                            <img src="../Assets/RescuePage/name.png" alt="Email">
+                            Email Address
                         </label>
-                        <input type="text" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-field">
                         <label>
                             <img src="../Assets/RescuePage/contact.png" alt="Contact">
                             Contact Number
                         </label>
-                        <input type="text" placeholder="Contact No.">
+                        <input type="tel" name="contact" placeholder="Contact No." required>
                     </div>
                     <div class="form-field">
                         <label>
                             <img src="../Assets/RescuePage/location.png" alt="Location">
                             Location
                         </label>
-                        <input type="text" placeholder="Location">
+                        <input type="text" name="location" placeholder="Location" required>
                     </div>
                     <div class="form-field">
                         <label>
                             <img src="../Assets/RescuePage/description.png" alt="Description">
                             Description
                         </label>
-                        <textarea placeholder="Description"></textarea>
+                        <textarea name="description" placeholder="Description" required></textarea>
                     </div>
                     <div class="form-field">
                         <label>
                             <img src="../Assets/RescuePage/upload.png" alt="Upload">
                             Upload Photo
                         </label>
-                        <div class="upload-box">
+                        <div class="upload-box" id="uploadBox">
                             <img src="../Assets/RescuePage/cloud.png" alt="Upload" style="width:22px;height:22px;flex-shrink:0;">
-                            <div class="upload-text">
+                            <div class="upload-text" id="uploadText">
                                 <p>Click to <span>upload</span> or drag and drop</p>
                                 <small>JPG, PNG (Max 10MB)</small>
                             </div>
                         </div>
+                        <input type="file" id="photoInput" name="photo" accept="image/jpeg,image/png" style="display:none;" required>
+                        <small id="photoName" style="display:none; color:#888; margin-top:6px;"></small>
                     </div>
                     <div class="form-field">
                         <label>
                             <img src="../Assets/RescuePage/urgency.png" alt="Urgency">
                             Urgency Level
                         </label>
-                        <div class="urgency-btns">
-                            <button>Low</button>
-                            <button>Medium</button>
-                            <button class="active">High</button>
+                        <div class="urgency-btns" id="urgencyBtns">
+                            <button type="button" class="urgency-btn" data-value="Low">Low</button>
+                            <button type="button" class="urgency-btn" data-value="Medium">Medium</button>
+                            <button type="button" class="urgency-btn active" data-value="High">High</button>
                         </div>
+                        <input type="hidden" name="urgency" id="urgencyValue" value="High">
                     </div>
                 </div>
-                <button class="btn-submit">Submit Rescue Report</button>
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <div class="dog-circle">
-                <img src="../Assets/RescuePage/doggyRescue.png" alt="Dog">
-            </div>
+                <button type="submit" class="btn-submit">Submit Rescue Report</button>
+            </form>
             <img src="../Assets/RescuePage/heartMessage.png" alt="Heart Message" class="heart-message">
         </div>
     </section>
 
     <section class="how-section">
-        <h2>How It Works</h2>
+        <h2 class="reveal">How It Works</h2>
         <div class="steps">
             <div class="step">
                 <div class="step-icon"><img src="../Assets/RescuePage/paw.png" alt="Report"></div>
@@ -128,8 +128,8 @@
     </section>
 
     <section class="contacts-section">
-        <h2>Contacts of Rescuers</h2>
-        <div class="contacts-bg">
+        <h2 class="reveal">Contacts of Rescuers</h2>
+        <div class="contacts-bg reveal">
             <div class="contacts-grid">
                 <div class="org">
                     <h3>Philippine Animal Welfare Society (PAWS)</h3>
@@ -218,12 +218,72 @@
             </div>
         </footer>
 
+<script src="../Pages/scroll-reveal.js"></script>
 <script>
-    document.querySelectorAll('.urgency-btns button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.urgency-btns button').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
+    const rescueForm = document.getElementById('rescueForm');
+    const uploadBox = document.getElementById('uploadBox');
+    const photoInput = document.getElementById('photoInput');
+    const photoName = document.getElementById('photoName');
+    const urgencyBtns = document.querySelectorAll('.urgency-btn');
+    const urgencyValue = document.getElementById('urgencyValue');
+
+    uploadBox.addEventListener('click', () => photoInput.click());
+
+    photoInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const validTypes = ['image/jpeg', 'image/png'];
+            if (!validTypes.includes(file.type)) {
+                alert('Only JPG and PNG files are allowed.');
+                photoInput.value = '';
+                photoName.textContent = '';
+                photoName.style.display = 'none';
+                return;
+            }
+            if (file.size > 10 * 1024 * 1024) {
+                alert('File size must be under 10MB.');
+                photoInput.value = '';
+                photoName.textContent = '';
+                photoName.style.display = 'none';
+                return;
+            }
+            photoName.textContent = '✓ ' + file.name;
+            photoName.style.display = 'block';
+        }
+    });
+
+    urgencyBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            urgencyBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            urgencyValue.value = btn.dataset.value;
         });
+    });
+
+    rescueForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const email = rescueForm.email.value.trim();
+        const contact = rescueForm.contact.value.trim();
+        const location = rescueForm.location.value.trim();
+        const description = rescueForm.description.value.trim();
+        const photo = photoInput.files[0];
+        
+        if (!email || !contact || !location || !description || !photo) {
+            alert('Please fill in all fields and upload a photo.');
+            return;
+        }
+        
+        alert('Report sent successfully!');
+        
+        rescueForm.reset();
+        photoInput.value = '';
+        photoName.textContent = '';
+        photoName.style.display = 'none';
+        urgencyBtns.forEach(btn => btn.classList.remove('active'));
+        urgencyBtns[2].classList.add('active');
+        urgencyValue.value = 'High';
     });
 </script>
 </body>

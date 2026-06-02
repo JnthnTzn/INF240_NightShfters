@@ -10,8 +10,8 @@
     background-color: #e9ddc6; 
     justify-content: center;
     min-height: 120px;
-    gap: clamp(40px, 6vw, 100px); /* clamp: 1st = smallest gap, 2nd = responsive gap, 3rd = largest gap */
-    box-shadow: 0 6px 10px rgba(59, 42, 26, .30); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    gap: clamp(40px, 6vw, 100px); 
+    box-shadow: 0 6px 10px rgba(59, 42, 26, .30); 
     position: relative;
     z-index: 100;
     font-family: 'Lato', sans-serif;
@@ -23,7 +23,7 @@
 }
 
 .nav-logo img {
-    height: clamp(90px, 10vw, 150px); /* clamp: 1st = smallest size, 2nd = responsive size, 3rd = largest size */
+    height: clamp(90px, 10vw, 150px); 
     width: auto;
 }
 
@@ -39,30 +39,30 @@
 }
 
 .nav-links a {
-    position: relative; /* 1st = allows the underline to position under this link */
+    position: relative; 
     text-decoration: none;
     color: #000000;
     font-size: 20px;
 
-    padding-bottom: 6px; /* 1st = space between text and underline */
-    transition: color 0.3s ease; /* 1st = property animated, 2nd = duration, 3rd = animation style */
+    padding-bottom: 6px; 
+    transition: color 0.3s ease; 
 }
 
 .nav-links a::after {
     content: "";
     position: absolute;
 
-    left: 50%; /* 1st = starts underline from center */
-    bottom: 0; /* 1st = places underline at bottom of link */
+    left: 50%; 
+    bottom: 0; 
 
-    width: 0; /* 1st = underline starts hidden */
-    height: 3px; /* 1st = underline thickness */
+    width: 0; 
+    height: 3px; 
 
     background-color: #b98031;
-    border-radius: 999px; /* 1st = makes underline ends rounded */
+    border-radius: 999px; 
 
-    transform: translateX(-50%); /* 1st = centers the underline */
-    transition: width 0.3s ease; /* 1st = property animated, 2nd = duration, 3rd = animation style */
+    transform: translateX(-50%); 
+    transition: width 0.3s ease; 
 }
 
 .nav-links a:hover {
@@ -70,7 +70,7 @@
 }
 
 .nav-links a:hover::after {
-    width: 100%; /* 1st = underline expands to full text width */
+    width: 100%; 
 }
 
 .contact-btn {
@@ -81,8 +81,8 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 17px;
-    text-decoration: none; /* 1st = removes underline from the link */
-    display: inline-block; /* 1st = lets padding and hover movement work properly */
+    text-decoration: none; 
+    display: inline-block; 
 
     transition: 
         background-color 0.3s ease,
@@ -96,8 +96,8 @@
 
 .contact-btn:hover {
     background-color: #535523;
-    transform: translateY(-3px); /* 1st = moves horizontally, 2nd = moves vertically; negative vertical value moves upward */
-    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.25); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.25); 
 }
 
 html {

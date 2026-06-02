@@ -1,6 +1,4 @@
-/* ============================
-   Load Navbar
-============================ */
+
 
 const navbar = document.getElementById("navbar");
 
@@ -15,9 +13,7 @@ if (navbar) {
 }
 
 
-/* ============================
-   Load Footer
-============================ */
+
 
 const footer = document.getElementById("footer");
 

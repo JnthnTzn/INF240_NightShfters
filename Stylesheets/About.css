@@ -1,4 +1,4 @@
-/* --- GLOBAL STYLES --- */
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -17,12 +17,12 @@ body {
     background-attachment: scroll; 
 }
 
-/* --- MAIN ABOUT LAYOUT (Stretched and Wide) --- */
+
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 2.4fr; /* Gives the pad significantly more horizontal room */
+    grid-template-columns: 1fr 2.4fr; 
     padding: 60px 40px;
-    max-width: 1650px;               /* Pushed max-width out to allow an ultra-wide layout */
+    max-width: 1650px;               
     margin: 0 auto;
     align-items: center;
     gap: 50px;
@@ -40,14 +40,14 @@ body {
     object-fit: contain; 
 }
 
-/* --- THE STRETCHED PAD CONTAINER --- */
+
 .about-pad {
     background-color: #fffdfa; 
-    padding: 50px 70px;        /* Wide horizontal inside padding */
+    padding: 50px 70px;        
     border-radius: 24px;       
     border: 1px solid #e8d9c4;
     box-shadow: 0 12px 32px rgba(122, 74, 30, 0.05); 
-    width: 100%;               /* Ensures pad expands fully into its 2.4fr grid slot */
+    width: 100%;               
 }
 
 .about-title {
@@ -57,15 +57,15 @@ body {
     margin-bottom: 35px;
 }
 
-/* --- ROLLED BACK 2x2 GRID (Spaced out horizontally) --- */
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    gap: 50px 80px;            /* Generous 80px horizontal gap spreads out columns */
+    gap: 50px 80px;            
 }
 
-/* Intersecting Grid Dividers */
+
 .about-grid::before {
     content: ""; 
     position: absolute; 

@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fur Tips | Furry Tales</title>
 
-    <!-- Google Fonts -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Lato:wght@400;500;600;700;900&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS Files -->
+    
     <link rel="stylesheet" href="../Stylesheets/navbar.css">
     <link rel="stylesheet" href="../Stylesheets/furtips.css">
     <link rel="stylesheet" href="../Stylesheets/footer.css">
+    <link rel="stylesheet" href="../Stylesheets/scroll-reveal.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    
     <nav class="navbar">
         <a class="nav-logo">
             <img src="../Assets/HomePage/logo.png" alt="Furry Tales Logo">
@@ -33,11 +34,11 @@
         <a href="#footer" class="contact-btn">Contact Us</a>
     </nav>
 
-    <!-- Fur Tips Page -->
+    
     <main class="fur-tips-page">
 
-        <!-- Hero / Title Section -->
-        <section class="fur-tips-hero">
+        
+        <section class="fur-tips-hero reveal">
             <img src="../Assets/FurTipsPage/small-paw.png" alt="" class="tips-decor decor-paw-left">
             <img src="../Assets/FurTipsPage/heart copy.png" alt="" class="tips-decor decor-heart-left">
             <img src="../Assets/FurTipsPage/small-paw.png" alt="" class="tips-decor decor-paw-right">
@@ -54,8 +55,8 @@
         </section>
 
 
-        <!-- Care Categories -->
-        <section class="tips-category-section">
+        
+        <section class="tips-category-section reveal">
 
             <article class="tip-card">
                 <div class="tip-icon-circle">
@@ -126,14 +127,14 @@
         </section>
 
 
-        <!-- Featured Guide -->
+        
         <section class="featured-guide-section">
 
-            <div class="featured-guide-image">
+            <div class="featured-guide-image reveal-left">
                 <img src="../Assets/FurTipsPage/pet-guide.png" alt="Dog and cat sitting together">
             </div>
 
-            <div class="featured-guide-content">
+            <div class="featured-guide-content reveal-right">
                 <p class="guide-label">Featured Guide</p>
 
                 <h2>First Week With an Adopted Pet</h2>
@@ -175,8 +176,8 @@
         </section>
 
 
-        <!-- Quick Reminders -->
-        <section class="quick-reminders-section">
+        
+        <section class="quick-reminders-section reveal">
 
             <div class="quick-reminders-heading">
                 <img src="../Assets/FurTipsPage/small-paw.png" alt="">
@@ -230,7 +231,7 @@
         </section>
 
 
-        <!-- Closing Note -->
+        
         <section class="fur-tips-closing">
             <p>
                 <span>♥</span>
@@ -239,7 +240,7 @@
             </p>
         </section>
 
-        <!-- Fur Tips Popup Modal -->
+        
 <div class="tip-modal-overlay" id="tipModal">
     <div class="tip-modal-card">
 
@@ -266,7 +267,7 @@
 
     </main>
 
-    <!-- Footer -->
+    
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-section footer-logo">
@@ -303,7 +304,8 @@
             </div>
         </footer>
 
-    <!-- Fetch Navbar and Footer -->
+    
+    <script src="../Pages/scroll-reveal.js"></script>
     <script src="../Pages/layout.js"></script>
     <script src="../Pages/furtips.js"></script>
 

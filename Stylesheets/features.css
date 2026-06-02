@@ -1,7 +1,7 @@
-/* features.css */
+
 
 .feature-section {
-    /*width: 100%;*/
+    
     height: 430px;
     background-color: #ead4ac;
 
@@ -43,7 +43,7 @@
     border-radius: 10px;
 }
 
-/* ICON */
+
 .feature-image {
     width: 85px;
     height: 85px;
@@ -53,7 +53,7 @@
     margin-bottom: 20px;
 }
 
-/* TITLE */
+
 .feature-card h3 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 26px;
@@ -63,10 +63,10 @@
     margin-bottom: 18px;
 }
 
-/* DESCRIPTION */
+
 .feature-card p {
     width: 210px;
-    min-height: 78px;   /* keeps all Learn More aligned */
+    min-height: 78px;   
 
     font-family: 'Lato', sans-serif;
     font-size: 17px;
@@ -76,10 +76,10 @@
     margin-bottom: 22px;
 }
 
-/* LEARN MORE */
+
 .feature-card a {
     font-family: 'Lato', sans-serif;
-    font-size: 17px; /* 1st = text size */
+    font-size: 17px; 
     font-weight: 700;
     color: #a2642a;
     text-decoration: none;
@@ -87,10 +87,10 @@
     display: inline-block;
     margin-top: 0;
 
-    transition: color 0.25s ease, transform 0.25s ease; /* 1st = color animation, 2nd = movement animation */
+    transition: color 0.25s ease, transform 0.25s ease; 
 }
 
 .feature-card a:hover {
     color: #6f421d;
-    transform: translateY(-5px); /* 1st = vertical movement; negative value moves upward */
+    transform: translateY(-5px); 
 }

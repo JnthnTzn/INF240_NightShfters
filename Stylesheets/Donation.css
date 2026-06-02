@@ -19,7 +19,7 @@ body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
     padding: 40px 40px 40px 60px; z-index: 2;
 }
 .hero-overlay h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 3rem; color: #3b2a1a; line-height: 1.15; margin-bottom: 10px;
 }
 .hero-underline {
@@ -48,7 +48,7 @@ body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
 }
 .appeal-text { flex: 1; }
 .appeal-text h2 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 2.4rem; color: #fdf6ee; line-height: 1.2; margin-bottom: 18px;
 }
 .appeal-text p { font-size: 0.92rem; color: #fdf6ee; line-height: 1.8; margin-bottom: 14px; text-align: justify; }
@@ -63,7 +63,7 @@ body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
     text-align: center;
 }
 .gift-section > h2 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 2.6rem; color: #3b2a1a; margin-bottom: 44px;
 }
 .gift-grid {
@@ -90,7 +90,7 @@ body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
 .gift-icon-wrap.teal  { background: #a8cfd4; }
 .gift-icon-wrap img { width: 50px; height: 50px; object-fit: contain; }
 .gift-card h3 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 1.4rem; color: #3b2a1a; margin-bottom: 12px;
 }
 .gift-card p { font-size: 0.85rem; color: #5a3e28; line-height: 1.6; text-align: center; margin-bottom: 20px; }

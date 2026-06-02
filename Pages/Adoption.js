@@ -1,4 +1,4 @@
-// Scroll reveal
+
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -12,25 +12,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => revealObserver.observe(el));
 
-// Floating background paws & hearts
-const bgFloats = document.getElementById('bgFloats');
-const floatSymbols = ['🐾','🐾','🐾','❤️','🐾','💛','🐾','❤️'];
 
-function createFloat(){
-  const span = document.createElement('span');
-  span.textContent = floatSymbols[Math.floor(Math.random() * floatSymbols.length)];
-  span.style.left = Math.random() * 100 + 'vw';
-  span.style.fontSize = (22 + Math.random() * 24) + 'px';
-  const duration = 6 + Math.random() * 8;
-  span.style.animationDuration = duration + 's';
-  span.style.animationDelay = '0s';
-  bgFloats.appendChild(span);
-  setTimeout(() => span.remove(), (duration + 1) * 1000);
-}
-
-setInterval(createFloat, 600);
-
-// Favorite Heart Toggle
 const hearts = document.querySelectorAll('.heart');
 hearts.forEach(heart => {
   heart.addEventListener('click', () => {
@@ -44,7 +26,7 @@ hearts.forEach(heart => {
   });
 });
 
-// Pet Data
+
 const petDetails = [
   {
     name: 'Milo',
@@ -53,10 +35,15 @@ const petDetails = [
     age: '6 Months',
     gender: 'Male',
     size: 'Medium',
-    meta: 'Male • 6 Months • Medium',
+    status: 'Rescued',
+    personality: 'Playful, Friendly, Affectionate',
+    health: 'Vaccinated, Dewormed',
+    goodWith: 'Kids, Other Dogs',
+    rescuedFrom: 'Barangay Streets',
     image: '../Assets/AdoptionPage/askal.jpg',
     traits: ['Playful', 'Friendly', 'Affectionate'],
-    description: 'Milo is a sweet and energetic Aspin who loves to play fetch and cuddle. He gets along well with children and other pets.'
+    quote: '"Every dog deserves a second chance at love."',
+    story: 'Milo was found wandering the streets of a barangay, malnourished and scared. A kind neighbor spotted him rummaging through garbage for scraps and reached out to Furry Tales. When our rescue team arrived, Milo was hiding under a parked vehicle, trembling and too weak to stand properly. His ribs were visible, his fur was matted, and his eyes were filled with a quiet sadness that broke everyone\'s heart.\n\nAfter being brought to our shelter, Milo received immediate veterinary care — treatment for skin infections, deworming, vaccinations, and a carefully managed feeding plan. In the first few days, he was hesitant and withdrawn, unsure whether to trust the people around him.\n\nBut Milo\'s spirit was never truly broken. Within two weeks, the real Milo began to emerge. He started wagging his tail when volunteers walked in. He discovered his love for fetch and could play for hours without tiring. He learned to sleep without flinching at every sound.\n\nToday, Milo is one of the most affectionate dogs at the shelter. He loves belly rubs, cuddles on rainy afternoons, and greeting every new face with an enthusiastic tail wag. He is proof that with patience and love, even the most broken hearts can heal. Milo is ready to write the next — and best — chapter of his story. With you.'
   },
   {
     name: 'Luna',
@@ -65,10 +52,15 @@ const petDetails = [
     age: '4 Months',
     gender: 'Female',
     size: 'Small',
-    meta: 'Female • 4 Months • Small',
+    status: 'Fostered',
+    personality: 'Curious, Sweet, Gentle',
+    health: 'Vaccinated, Dewormed',
+    goodWith: 'Quiet Homes, Adults',
+    rescuedFrom: 'Abandoned Litter',
     image: '../Assets/AdoptionPage/puspin.jpg',
     traits: ['Curious', 'Sweet', 'Gentle'],
-    description: 'Luna is a curious little kitten who loves exploring and playing with toys. She\'s gentle and perfect for families.'
+    quote: '"Small paws, big heart."',
+    story: 'Luna was part of a litter of four kittens discovered abandoned in a soggy cardboard box left outside a wet market on a rainy Tuesday morning. She was the smallest — so tiny she fit in the palm of a hand — and the most fragile of the group. When our volunteer found her, she was barely breathing, her body cold and barely moving.\n\nThe next 72 hours were critical. Luna was placed with one of our most experienced foster caregivers, who fed her with a tiny bottle every two hours, day and night, without fail. There were moments when it felt uncertain whether she would make it. But Luna had a fierce will to live.\n\nShe opened her eyes for the first time on a quiet Sunday morning. From that moment, her personality bloomed. She became the most curious creature — batting at dust particles in sunlight, investigating every corner, and chirping softly whenever she wanted company.\n\nNow Luna is a gentle, sweet-natured young cat who purrs like a tiny engine the moment you pick her up. She loves warm laps, watching birds through windows, and slow mornings. She has known hardship from her very first breath — and she deserves nothing less than a lifetime of softness and love.'
   },
   {
     name: 'Rocky',
@@ -77,10 +69,15 @@ const petDetails = [
     age: '1 Year',
     gender: 'Male',
     size: 'Large',
-    meta: 'Male • 1 Year • Large',
+    status: 'Rescued',
+    personality: 'Loyal, Smart, Protective',
+    health: 'Vaccinated, Neutered',
+    goodWith: 'Experienced Owners',
+    rescuedFrom: 'Neglect Case',
     image: '../Assets/AdoptionPage/german.jpg',
     traits: ['Loyal', 'Smart', 'Protective'],
-    description: 'Rocky is an intelligent and loyal German Shepherd. He\'s well-trained and makes an excellent guard dog and companion.'
+    quote: '"Loyalty is not just a word — it\'s a promise."',
+    story: 'Rocky arrived at Furry Tales on a cold evening, surrendered by an owner who admitted they could no longer manage him. He stepped out with guarded eyes and a stiff posture — the body language of a dog who had learned that trust could be taken away without warning.\n\nIn his first weeks, Rocky kept mostly to himself. He was not aggressive, but he was distant — watching, waiting, calculating whether the kindness being offered was real. Our team gave him space, let him set the pace. A slow hand extended. A quiet voice. Treats left near his kennel without expectation.\n\nAnd then one morning, Rocky walked up to one of our volunteers and sat beside her. Just sat there, leaning slightly against her leg. It was a small moment — but everyone who saw it knew it meant everything.\n\nFrom that point, Rocky\'s transformation was steady and remarkable. He mastered commands quickly, took pride in doing things right, and discovered a love for morning runs. Rocky is loyal in the deepest sense of the word. He will give everything to the person who earns his trust.'
   },
   {
     name: 'Coco',
@@ -89,10 +86,15 @@ const petDetails = [
     age: '8 Months',
     gender: 'Female',
     size: 'Small',
-    meta: 'Female • 8 Months • Small',
+    status: 'Fostered',
+    personality: 'Calm, Independent, Loving',
+    health: 'Vaccinated, Spayed',
+    goodWith: 'Calm Homes, Singles',
+    rescuedFrom: 'Shelter Transfer',
     image: '../Assets/AdoptionPage/persian.jpg',
     traits: ['Calm', 'Independent', 'Loving'],
-    description: 'Coco is a calm and elegant Persian cat who enjoys quiet environments. She loves being pampered and groomed.'
+    quote: '"Elegance is not just for royalty — it\'s for every cat."',
+    story: 'Coco arrived through a transfer from an overcrowded city shelter that had run out of space. When the carrier door was opened, she did not rush out. She simply looked around with calm amber eyes — unhurried, unbothered, as though the world could wait.\n\nThat composure never left her. Even in the busy shelter environment, Coco moved through it all with quiet dignity. She found her favorite windowsill within the first day and claimed it without fuss.\n\nCoco is not the kind of cat who demands attention. She expresses herself in softer ways — a slow blink from across the room, a gentle press of her head against your hand, a soft purr that starts almost imperceptibly and grows the longer you stay.\n\nShe loves being brushed, sitting near people more than being held, and watching the world through glass. Coco is perfect for someone who understands that affection does not always announce itself loudly. She will enrich your life quietly, consistently, and beautifully.'
   },
   {
     name: 'Buddy',
@@ -101,64 +103,74 @@ const petDetails = [
     age: '7 Months',
     gender: 'Male',
     size: 'Medium',
-    meta: 'Male • 7 Months • Medium',
+    status: 'Rescued',
+    personality: 'Friendly, Energetic, Loyal',
+    health: 'Vaccinated, Dewormed',
+    goodWith: 'Families, Kids, Other Pets',
+    rescuedFrom: 'Street Rescue',
     image: '../Assets/AdoptionPage/golden.png',
     traits: ['Friendly', 'Energetic', 'Loyal'],
-    description: 'Buddy is a friendly Golden Retriever who loves everyone he meets. He\'s energetic and perfect for active families.'
+    quote: '"Happiness is a warm puppy."',
+    story: 'Buddy was found tied to a post outside a convenience store on a busy street corner. Whoever left him there never came back. He waited for hours — tail still wagging, tongue lolling, eyes bright and trusting — as the day stretched into evening and the crowd thinned.\n\nWhen our rescue team arrived, Buddy greeted them as though they were long-lost friends. No fear. No hesitation. Just pure, uncomplicated joy at the presence of people.\n\nThat is Buddy\'s defining quality: an unshakeable, inexhaustible love for the world and everyone in it. Abandonment did not teach him to be cautious. Uncertainty did not dim his light.\n\nAt the shelter, Buddy quickly became everyone\'s favorite. He gets along beautifully with other dogs, plays gently with children, and has never met a stranger he did not immediately want to befriend. He loves morning walks, splashing in puddles, and falling asleep stretched across the largest available surface.\n\nBuddy just needs someone to come home to. And whoever that person is — they will be the luckiest person in the world.'
   }
 ];
 
-// Profile Modal
+
 const overlay = document.getElementById('profileModalOverlay');
 const closeBtn = document.getElementById('profileModalClose');
-const modalTitle = document.getElementById('profileModalTitle');
-const modalMeta = document.getElementById('profileModalMeta');
-const modalImage = document.getElementById('profileModalImage');
-const modalInfo = document.getElementById('profileModalInfo');
-const modalDescription = document.getElementById('profileModalDescription');
-const modalTraits = document.getElementById('profileModalTraits');
+const storyOverlay = document.getElementById('storyModalOverlay');
+const storyCloseBtn = document.getElementById('storyModalClose');
+const openStoryBtn = document.getElementById('openStoryBtn');
 
 let lastFocusedEl = null;
+let currentPet = null;
 
 function openModal(index){
   const data = petDetails[index];
   if(!data) return;
+  currentPet = data;
 
-  modalTitle.textContent = data.name;
-  modalMeta.textContent = data.meta;
-  modalImage.src = data.image;
-  modalImage.alt = data.name;
+  document.getElementById('profileModalTitle').textContent = data.name;
+  document.getElementById('profileModalStatus').textContent = data.status;
+  document.getElementById('profileModalImage').src = data.image;
+  document.getElementById('profileModalImage').alt = data.name;
+  document.getElementById('profileModalQuotePreview').textContent = data.quote;
 
-  modalInfo.innerHTML = `
-    <div><strong>Animal</strong><span>${data.animal}</span></div>
-    <div><strong>Breed</strong><span>${data.breed}</span></div>
-    <div><strong>Age</strong><span>${data.age}</span></div>
-    <div><strong>Gender</strong><span>${data.gender}</span></div>
+  document.getElementById('profileModalGenderAge').innerHTML = `
+    <span>🛁 ${data.gender}</span>
+    <span>🐾 ${data.age}</span>
   `;
 
-  modalDescription.textContent = data.description;
-
-  modalTraits.innerHTML = '';
-  data.traits.forEach(t => {
-    const pill = document.createElement('div');
-    pill.className = 'trait-pill';
-    pill.textContent = t;
-    modalTraits.appendChild(pill);
-  });
+  document.getElementById('profileModalGrid').innerHTML = `
+    <div class="pgrid-item"><strong>Personality</strong><span>${data.personality}</span></div>
+    <div class="pgrid-item"><strong>Rescued From</strong><span>${data.rescuedFrom}</span></div>
+    <div class="pgrid-item"><strong>Health</strong><span>${data.health}</span></div>
+    <div class="pgrid-item"><strong>Breed</strong><span>${data.breed}</span></div>
+    <div class="pgrid-item"><strong>Good With</strong><span>${data.goodWith}</span></div>
+    <div class="pgrid-item"><strong>Size</strong><span>${data.size}</span></div>
+  `;
 
   lastFocusedEl = document.activeElement;
   overlay.classList.add('open');
-  overlay.style.display = 'flex';
   document.body.style.overflow = 'hidden';
-  closeBtn.focus();
 }
 
 function closeModal(){
   overlay.classList.remove('open');
   document.body.style.overflow = '';
-  if(lastFocusedEl && typeof lastFocusedEl.focus === 'function'){
-    lastFocusedEl.focus();
-  }
+  if(lastFocusedEl) lastFocusedEl.focus();
+}
+
+function openStory(){
+  if(!currentPet) return;
+  document.getElementById('storyModalTitle').textContent = currentPet.name;
+  document.getElementById('storyModalQuote').textContent = currentPet.quote;
+  document.getElementById('storyModalText').innerHTML = currentPet.story.split('\n\n').map(p => `<p>${p}</p>`).join('');
+  storyOverlay.classList.add('open');
+}
+
+function closeStory(){
+  storyOverlay.classList.remove('open');
 }
 
 document.querySelectorAll('.view-btn').forEach(btn => {
@@ -166,17 +178,31 @@ document.querySelectorAll('.view-btn').forEach(btn => {
 });
 
 closeBtn.addEventListener('click', closeModal);
+storyCloseBtn.addEventListener('click', closeStory);
+openStoryBtn.addEventListener('click', openStory);
 
-overlay.addEventListener('click', (e) => {
-  if(e.target === overlay) closeModal();
+document.getElementById('shareStoryBtn').addEventListener('click', () => {
+  if(!currentPet) return;
+  const text = `Meet ${currentPet.name}! ${currentPet.quote} ${currentPet.story.substring(0, 100)}... Adopt them at Furry Tales! 🐾`;
+  if(navigator.share){
+    navigator.share({ title: `${currentPet.name}'s Story`, text });
+  } else {
+    navigator.clipboard.writeText(text);
+    alert('Story copied to clipboard!');
+  }
 });
+
+overlay.addEventListener('click', (e) => { if(e.target === overlay) closeModal(); });
+storyOverlay.addEventListener('click', (e) => { if(e.target === storyOverlay) closeStory(); });
 
 document.addEventListener('keydown', (e) => {
-  if(!overlay.classList.contains('open')) return;
-  if(e.key === 'Escape') closeModal();
+  if(e.key === 'Escape'){
+    if(storyOverlay.classList.contains('open')) closeStory();
+    else if(overlay.classList.contains('open')) closeModal();
+  }
 });
 
-// Filters
+
 let currentFilters = { animal: '', breed: '', age: '' };
 
 function filterPets(){
@@ -206,7 +232,7 @@ function searchPets(){
   filterPets();
 }
 
-// Breed lists
+
 const dogBreeds = [
   'Aspin (Asong Pinoy)','Bantam','Ilocos Dog','Cordillera Dog',
   'Labrador Retriever','Golden Retriever','Shih Tzu','Poodle',
@@ -221,7 +247,7 @@ const catBreeds = [
   'Birman','Sphynx','Russian Blue','American Shorthair'
 ];
 
-// Custom Dropdowns
+
 const animalTrigger = document.getElementById('animalTrigger');
 const animalDropdown = document.getElementById('animalDropdown');
 const breedTrigger = document.getElementById('breedTrigger');

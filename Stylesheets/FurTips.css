@@ -1,4 +1,4 @@
-/* furtips.css */
+
 
 * {
     margin: 0;
@@ -12,114 +12,114 @@ body {
 }
 
 .fur-tips-page {
-    width: 100%; /* 1st = full page width */
+    width: 100%; 
     background-color: #fdf8f4;
-    padding: 40px 45px 35px 45px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    padding: 40px 45px 35px 45px; 
     position: relative;
     overflow: hidden;
 }
 
-/* HERO / TITLE SECTION */
+
 .fur-tips-hero {
-    max-width: 1320px; /* 1st = maximum content width */
-    margin: 0 auto 35px auto; /* 1st = top, 2nd = right auto, 3rd = bottom, 4th = left auto */
+    max-width: 1320px; 
+    margin: 0 auto 35px auto; 
     text-align: center;
     position: relative;
 }
 
 .fur-tips-hero h1 {
     font-family: 'Caveat', cursive;
-    font-size: 82px; /* 1st = title size */
+    font-size: 82px; 
     font-weight: 700;
     color: #4a2f1d;
-    line-height: 1; /* 1st = vertical height of each text line */
-    margin-bottom: 14px; /* 1st = space below title */
+    line-height: 1; 
+    margin-bottom: 14px; 
 }
 
 .fur-tips-hero p {
     font-family: 'Lato', sans-serif;
-    font-size: 20px; /* 1st = subtitle text size */
+    font-size: 20px; 
     color: #6b563f;
-    margin-bottom: 24px; /* 1st = space below subtitle */
+    margin-bottom: 24px; 
 }
 
-/* SMALL DIVIDER UNDER TITLE */
+
 .tips-divider {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* 1st = space between line, paw, and line */
+    gap: 10px; 
 }
 
 .tips-divider span {
-    width: 80px; /* 1st = divider line width */
-    height: 2px; /* 1st = divider line thickness */
+    width: 80px; 
+    height: 2px; 
     background-color: #e5c9a7;
-    border-radius: 999px; /* 1st = rounded ends of the line */
+    border-radius: 999px; 
 }
 
 .tips-divider img {
-    width: 50px; /* 1st = paw icon width */
-    height: auto; /* 1st = paw icon height */
+    width: 50px; 
+    height: auto; 
     object-fit: contain;
 }
 
-/* HERO DECORATIONS */
+
 .tips-decor {
     position: absolute;
     pointer-events: none;
-    opacity: 0.35; /* 1st = decoration transparency */
+    opacity: 0.35; 
     z-index: 0;
 }
 
 .decor-paw-left {
-    top: 35px; /* 1st = distance from top */
-    left: 75px; /* 1st = distance from left */
-    width: 70px; /* 1st = decoration size */
-    transform: rotate(-10deg); /* 1st = rotation angle */
+    top: 35px; 
+    left: 75px; 
+    width: 70px; 
+    transform: rotate(-10deg); 
 }
 
 .decor-heart-left {
-    top: 95px; /* 1st = distance from top */
-    left: 145px; /* 1st = distance from left */
-    width: 200px; /* 1st = decoration size */
-    transform: rotate(10deg); /* 1st = rotation angle */
+    top: 95px; 
+    left: 145px; 
+    width: 200px; 
+    transform: rotate(10deg); 
 }
 
 .decor-paw-right {
-    top: 30px; /* 1st = distance from top */
-    right: 80px; /* 1st = distance from right */
-    width: 70px; /* 1st = decoration size */
-    transform: rotate(12deg); /* 1st = rotation angle */
+    top: 30px; 
+    right: 80px; 
+    width: 70px; 
+    transform: rotate(12deg); 
 }
 
 .decor-heart-right {
-    top: 105px; /* 1st = distance from top */
-    right: 150px; /* 1st = distance from right */
-    width: 200px; /* 1st = decoration size */
-    transform: rotate(-12deg); /* 1st = rotation angle */
+    top: 105px; 
+    right: 150px; 
+    width: 200px; 
+    transform: rotate(-12deg); 
 }
 
-/* CARE CATEGORY CARDS */
+
 .tips-category-section {
-    max-width: 1320px; /* 1st = maximum row width */
-    margin: 0 auto 28px auto; /* 1st = top, 2nd = right auto, 3rd = bottom, 4th = left auto */
+    max-width: 1320px; 
+    margin: 0 auto 28px auto; 
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 1st = 6 equal columns */
-    gap: 20px; /* 1st = space between cards */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
 }
 
 .tip-card {
-    min-height: 260px; /* 1st = minimum card height */
+    min-height: 260px; 
     background-color: #fffaf3;
-    border: 1px solid #ead8c1; /* 1st = thickness, 2nd = style, 3rd = color */
-    border-radius: 18px; /* 1st = card corner roundness */
+    border: 1px solid #ead8c1; 
+    border-radius: 18px; 
 
-    padding: 26px 18px 22px 18px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    padding: 26px 18px 22px 18px; 
 
     text-align: center;
-    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); 
 
     display: flex;
     flex-direction: column;
@@ -130,55 +130,55 @@ body {
 }
 
 .tip-card:hover {
-    transform: translateY(-6px); /* 1st = vertical movement; negative value moves upward */
-    box-shadow: 0 9px 20px rgba(59, 42, 26, 0.16); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    transform: translateY(-6px); 
+    box-shadow: 0 9px 20px rgba(59, 42, 26, 0.16); 
 }
 
 .tip-icon-circle {
-    width: 115px; /* 1st = circle width */
-    height: 115px; /* 1st = circle height */
-    border-radius: 50%; /* 1st = makes the container a circle */
+    width: 115px; 
+    height: 115px; 
+    border-radius: 50%; 
     background-color: #f6ead8;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 18px; /* 1st = space below icon circle */
+    margin-bottom: 18px; 
 }
 
 .tip-icon-circle img {
-    width: 115px; /* 1st = image width */
-    height: 115px; /* 1st = image height */
+    width: 115px; 
+    height: 115px; 
     object-fit: contain;
 }
 
 .tip-card h2 {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 20px; /* 1st = card title size */
+    font-size: 20px; 
     font-weight: 700;
     color: #5a3424;
-    line-height: 1.25; /* 1st = space between title lines */
-    margin-bottom: 14px; /* 1st = space below title */
+    line-height: 1.25; 
+    margin-bottom: 14px; 
 }
 
 .tip-card p {
     font-family: 'Lato', sans-serif;
-    font-size: 16px; /* 1st = card paragraph size */
-    line-height: 1.45; /* 1st = space between text lines */
+    font-size: 16px; 
+    line-height: 1.45; 
     color: #5f4a36;
-    min-height: 48px; /* 1st = keeps arrow buttons aligned */
-    margin-bottom: 16px; /* 1st = space below paragraph */
+    min-height: 48px; 
+    margin-bottom: 16px; 
 }
 
 .tip-arrow-btn {
-    margin-top: auto; /* 1st = pushes arrow toward bottom of card */
+    margin-top: auto; 
     border: none;
     background: transparent;
 
     color: #7d842e;
-    font-size: 34px; /* 1st = arrow size */
-    line-height: 1; /* 1st = arrow line height */
+    font-size: 34px; 
+    line-height: 1; 
 
     cursor: pointer;
     transition: transform 0.25s ease, color 0.25s ease;
@@ -186,26 +186,26 @@ body {
 
 .tip-arrow-btn:hover {
     color: #5f6424;
-    transform: translateX(6px); /* 1st = horizontal movement; positive value moves right */
+    transform: translateX(6px); 
 }
 
-/* FEATURED GUIDE */
-.featured-guide-section {
-    max-width: 1320px; /* 1st = maximum section width */
-    min-height: 220px; /* 1st = minimum featured guide height */
 
-    margin: 0 auto 25px auto; /* 1st = top, 2nd = right auto, 3rd = bottom, 4th = left auto */
-    padding: 28px 34px; /* 1st = top/bottom, 2nd = left/right */
+.featured-guide-section {
+    max-width: 1320px; 
+    min-height: 220px; 
+
+    margin: 0 auto 25px auto; 
+    padding: 28px 34px; 
 
     background-color: #fffaf3;
-    border: 1px solid #ead8c1; /* 1st = thickness, 2nd = style, 3rd = color */
-    border-radius: 18px; /* 1st = corner roundness */
-    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    border: 1px solid #ead8c1; 
+    border-radius: 18px; 
+    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); 
 
     display: grid;
-    grid-template-columns: 300px 1fr 210px; /* 1st = image area, 2nd = text area, 3rd = button area */
+    grid-template-columns: 300px 1fr 210px; 
     align-items: center;
-    gap: 28px; /* 1st = space between columns */
+    gap: 28px; 
 }
 
 .featured-guide-image {
@@ -215,7 +215,7 @@ body {
 }
 
 .featured-guide-image img {
-    width: 280px; /* 1st = featured image width */
+    width: 280px; 
     height: auto;
     object-fit: contain;
 }
@@ -224,63 +224,63 @@ body {
     display: inline-block;
 
     font-family: 'Lato', sans-serif;
-    font-size: 14px; /* 1st = label text size */
+    font-size: 14px; 
     font-weight: 900;
-    letter-spacing: 1.5px; /* 1st = space between letters */
+    letter-spacing: 1.5px; 
     text-transform: uppercase;
     color: #7d842e;
 
-    margin-bottom: 8px; /* 1st = space below label */
+    margin-bottom: 8px; 
     position: relative;
 }
 
 .guide-label::after {
     content: "";
     display: block;
-    width: 32px; /* 1st = underline width */
-    height: 2px; /* 1st = underline thickness */
+    width: 32px; 
+    height: 2px; 
     background-color: #7d842e;
-    margin-top: 6px; /* 1st = space above underline */
-    border-radius: 999px; /* 1st = rounded underline ends */
+    margin-top: 6px; 
+    border-radius: 999px; 
 }
 
 .featured-guide-content h2 {
     font-family: 'Caveat', cursive;
-    font-size: 42px; /* 1st = featured title size */
+    font-size: 42px; 
     font-weight: 700;
     color: #4a2f1d;
-    line-height: 1.1; /* 1st = title line height */
-    margin-bottom: 8px; /* 1st = space below title */
+    line-height: 1.1; 
+    margin-bottom: 8px; 
 }
 
 .guide-intro {
     font-family: 'Lato', sans-serif;
-    font-size: 17px; /* 1st = intro text size */
+    font-size: 17px; 
     color: #6b563f;
-    margin-bottom: 22px; /* 1st = space below intro */
+    margin-bottom: 22px; 
 }
 
 .guide-steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 1st = 3 equal step columns */
-    gap: 18px; /* 1st = space between steps */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 18px; 
 }
 
 .guide-step {
     display: flex;
     align-items: flex-start;
-    gap: 12px; /* 1st = space between number and text */
-    padding-right: 18px; /* 1st = right inner spacing */
+    gap: 12px; 
+    padding-right: 18px; 
 }
 
 .guide-step:not(:last-child) {
-    border-right: 1px solid #ead8c1; /* 1st = thickness, 2nd = style, 3rd = color */
+    border-right: 1px solid #ead8c1; 
 }
 
 .guide-step span {
-    width: 34px; /* 1st = circle width */
-    height: 34px; /* 1st = circle height */
-    border-radius: 50%; /* 1st = makes number background circle */
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%; 
     background-color: #7d842e;
     color: #ffffff;
 
@@ -289,7 +289,7 @@ body {
     justify-content: center;
 
     font-family: 'Lato', sans-serif;
-    font-size: 18px; /* 1st = number size */
+    font-size: 18px; 
     font-weight: 900;
 
     flex-shrink: 0;
@@ -297,16 +297,16 @@ body {
 
 .guide-step h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 17px; /* 1st = step title size */
+    font-size: 17px; 
     font-weight: 900;
     color: #3b2a1a;
-    margin-bottom: 5px; /* 1st = space below step title */
+    margin-bottom: 5px; 
 }
 
 .guide-step p {
     font-family: 'Lato', sans-serif;
-    font-size: 14px; /* 1st = step paragraph size */
-    line-height: 1.35; /* 1st = space between text lines */
+    font-size: 14px; 
+    line-height: 1.35; 
     color: #6b563f;
 }
 
@@ -318,136 +318,136 @@ body {
 
 .read-guide-btn {
     border: none;
-    border-radius: 999px; /* 1st = pill shape roundness */
+    border-radius: 999px; 
 
     background-color: #b98031;
     color: #ffffff;
 
-    padding: 14px 26px; /* 1st = top/bottom, 2nd = left/right */
+    padding: 14px 26px; 
     font-family: 'Lato', sans-serif;
-    font-size: 17px; /* 1st = button text size */
+    font-size: 17px; 
     font-weight: 900;
 
     cursor: pointer;
-    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.20); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.20); 
     transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .read-guide-btn:hover {
     background-color: #616135;
-    transform: translateY(-3px); /* 1st = vertical movement; negative value moves upward */
-    box-shadow: 0 8px 16px rgba(59, 42, 26, 0.25); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 16px rgba(59, 42, 26, 0.25); 
 }
 
-/* QUICK REMINDERS */
+
 .quick-reminders-section {
-    max-width: 1320px; /* 1st = maximum section width */
-    margin: 0 auto 18px auto; /* 1st = top, 2nd = right auto, 3rd = bottom, 4th = left auto */
+    max-width: 1320px; 
+    margin: 0 auto 18px auto; 
 
     background-color: #fffaf3;
-    border: 1px solid #ead8c1; /* 1st = thickness, 2nd = style, 3rd = color */
-    border-radius: 18px; /* 1st = section corner roundness */
+    border: 1px solid #ead8c1; 
+    border-radius: 18px; 
 
-    padding: 24px 28px 28px 28px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
-    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    padding: 24px 28px 28px 28px; 
+    box-shadow: 0 5px 14px rgba(59, 42, 26, 0.10); 
 }
 
 .quick-reminders-heading {
     display: flex;
     align-items: center;
-    gap: 2px; /* 1st = space between paw icon and heading */
-    margin-bottom: 22px; /* 1st = space below heading */
+    gap: 2px; 
+    margin-bottom: 22px; 
 }
 
 .quick-reminders-heading img {
-    width: 60px; /* 1st = paw icon width */
-    height: auto; /* 1st = paw icon height */
-    transform: rotate(-20deg); /* 1st = rotation angle */
+    width: 60px; 
+    height: auto; 
+    transform: rotate(-20deg); 
     object-fit: contain;
 }
 
 .quick-reminders-heading h2 {
     font-family: 'Caveat', cursive;
-    font-size: 36px; /* 1st = quick reminder title size */
+    font-size: 36px; 
     color: #4a2f1d;
 }
 
 .quick-reminders-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 1st = 5 equal reminder columns */
-    gap: 20px; /* 1st = space between reminder items */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
 }
 
 .reminder-item {
     display: flex;
     align-items: center;
-    gap: 14px; /* 1st = space between icon and text */
-    min-height: 88px; /* 1st = minimum item height */
+    gap: 14px; 
+    min-height: 88px; 
 }
 
 .reminder-item:not(:first-child) {
-    border-left: 1px solid #ead8c1; /* 1st = thickness, 2nd = style, 3rd = color */
-    padding-left: 20px; /* 1st = space after divider line */
+    border-left: 1px solid #ead8c1; 
+    padding-left: 20px; 
 }
 
 .reminder-item img {
-    width: 72px; /* 1st = reminder icon width */
-    height: 72px; /* 1st = reminder icon height */
+    width: 72px; 
+    height: 72px; 
     object-fit: contain;
     flex-shrink: 0;
 }
 
 .reminder-item h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 16px; /* 1st = reminder title size */
+    font-size: 16px; 
     font-weight: 900;
     color: #3b2a1a;
-    margin-bottom: 5px; /* 1st = space below reminder title */
+    margin-bottom: 5px; 
 }
 
 .reminder-item p {
     font-family: 'Lato', sans-serif;
-    font-size: 13px; /* 1st = reminder text size */
-    line-height: 1.35; /* 1st = space between text lines */
+    font-size: 13px; 
+    line-height: 1.35; 
     color: #6b563f;
 }
 
-/* CLOSING NOTE */
+
 .fur-tips-closing {
-    max-width: 1320px; /* 1st = maximum section width */
-    margin: 0 auto; /* 1st = top/bottom, 2nd = left/right auto */
+    max-width: 1320px; 
+    margin: 0 auto; 
     text-align: center;
 }
 
 .fur-tips-closing p {
     font-family: 'Lato', sans-serif;
-    font-size: 18px; /* 1st = closing text size */
+    font-size: 18px; 
     font-style: italic;
     color: #6b563f;
 }
 
 .fur-tips-closing span {
     color: #ef9b80;
-    font-size: 22px; /* 1st = heart size */
-    margin: 0 22px; /* 1st = top/bottom, 2nd = left/right */
+    font-size: 22px; 
+    margin: 0 22px; 
 }
 
-/* FUR TIPS MODAL */
+
 .tip-modal-overlay {
     position: fixed;
-    top: 0; /* 0 places overlay at the very top of the screen */
-    left: 0; /* 0 places overlay at the very left of the screen */
-    width: 100%; /* 100% makes overlay cover full screen width */
-    height: 100%; /* 100% makes overlay cover full screen height */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
 
-    background-color: rgba(59, 42, 26, 0.45); /* rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    background-color: rgba(59, 42, 26, 0.45); 
     display: none;
 
     justify-content: center;
     align-items: center;
 
-    padding: 24px; /* creates space around the modal on small screens */
-    z-index: 999; /* keeps modal above the page */
+    padding: 24px; 
+    z-index: 999; 
     scroll: smooth;
 }
 
@@ -456,48 +456,48 @@ body {
 }
 
 .tip-modal-card {
-    width: 100%; /* allows modal to shrink on smaller screens */
-    max-width: 560px; /* controls maximum modal width */
+    width: 100%; 
+    max-width: 560px; 
 
     background-color: #fffaf3;
-    border: 1px solid #d8c6ac; /* 1px = border thickness */
-    border-radius: 24px; /* controls how rounded the modal corners are */
+    border: 1px solid #d8c6ac; 
+    border-radius: 24px; 
 
-    padding: 32px 34px 30px 34px; /* 1st = top, 2nd = right, 3rd = bottom, 4th = left */
+    padding: 32px 34px 30px 34px; 
     position: relative;
 
-    box-shadow: 0 12px 28px rgba(59, 42, 26, 0.28); /* box-shadow: 1st = horizontal, 2nd = vertical, 3rd = blur, 4th = rgba color; rgba: 1st = red, 2nd = green, 3rd = blue, 4th = opacity */
+    box-shadow: 0 12px 28px rgba(59, 42, 26, 0.28); 
 
     animation: modalPop 0.25s ease;
 }
 
 @keyframes modalPop {
     from {
-        transform: translateY(16px) scale(0.96); /* 1st = vertical movement, scale = size */
+        transform: translateY(16px) scale(0.96); 
         opacity: 0;
     }
 
     to {
-        transform: translateY(0) scale(1); /* returns modal to normal position and size */
+        transform: translateY(0) scale(1); 
         opacity: 1;
     }
 }
 
 .tip-modal-close {
     position: absolute;
-    top: 16px; /* controls close button distance from top */
-    right: 18px; /* controls close button distance from right */
+    top: 16px; 
+    right: 18px; 
 
-    width: 34px; /* controls close button width */
-    height: 34px; /* controls close button height */
-    border-radius: 50%; /* makes the close button circular */
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%; 
 
     border: none;
     background-color: #efe4d3;
     color: #3b2a1a;
 
-    font-size: 24px; /* controls X size */
-    line-height: 1; /* keeps X vertically centered */
+    font-size: 24px; 
+    line-height: 1; 
     cursor: pointer;
 
     transition: background-color 0.25s ease, transform 0.25s ease;
@@ -505,94 +505,94 @@ body {
 
 .tip-modal-close:hover {
     background-color: #ead4ac;
-    transform: rotate(8deg); /* rotates the button slightly on hover */
+    transform: rotate(8deg); 
 }
 
 .tip-modal-top {
     display: flex;
     align-items: center;
-    gap: 14px; /* controls space between icon and label */
-    margin-bottom: 18px; /* controls space below top row */
+    gap: 14px; 
+    margin-bottom: 18px; 
 }
 
 .tip-modal-icon {
-    width: 82px; /* controls modal icon width */
-    height: 82px; /* controls modal icon height */
+    width: 82px; 
+    height: 82px; 
     object-fit: contain;
 
     background-color: #f6ead8;
-    border-radius: 50%; /* makes icon background circular */
-    padding: 8px; /* creates space inside the icon circle */
+    border-radius: 50%; 
+    padding: 8px; 
 }
 
 .tip-modal-label {
     font-family: 'Lato', sans-serif;
-    font-size: 13px; /* controls label size */
+    font-size: 13px; 
     font-weight: 900;
-    letter-spacing: 1.4px; /* controls space between letters */
+    letter-spacing: 1.4px; 
     text-transform: uppercase;
     color: #7d842e;
 }
 
 .tip-modal-card h2 {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 28px; /* controls modal title size */
-    line-height: 1.25; /* controls title line spacing */
+    font-size: 28px; 
+    line-height: 1.25; 
     color: #4a2f1d;
-    margin-bottom: 12px; /* controls space below title */
+    margin-bottom: 12px; 
 }
 
 .tip-modal-intro {
     font-family: 'Lato', sans-serif;
-    font-size: 16px; /* controls intro text size */
-    line-height: 1.6; /* controls spacing between intro lines */
+    font-size: 16px; 
+    line-height: 1.6; 
     color: #6b563f;
-    margin-bottom: 18px; /* controls space below intro */
+    margin-bottom: 18px; 
 }
 
 .tip-modal-list {
     list-style: none;
-    margin-bottom: 20px; /* controls space below reminder list */
+    margin-bottom: 20px; 
 }
 
 .tip-modal-list li {
     font-family: 'Lato', sans-serif;
-    font-size: 15px; /* controls reminder text size */
-    line-height: 1.5; /* controls spacing between reminder lines */
+    font-size: 15px; 
+    line-height: 1.5; 
     color: #3b2a1a;
 
     background-color: #efe4d3;
-    border-radius: 14px; /* controls reminder item corner roundness */
-    padding: 10px 14px; /* 1st = top/bottom space, 2nd = left/right space */
-    margin-bottom: 10px; /* controls space between reminder items */
+    border-radius: 14px; 
+    padding: 10px 14px; 
+    margin-bottom: 10px; 
 }
 
 .tip-modal-list li::before {
     content: "🐾";
-    margin-right: 8px; /* controls space after paw bullet */
+    margin-right: 8px; 
 }
 
 .tip-modal-note {
     background-color: #f8ecd9;
-    border-left: 5px solid #7d842e; /* 5px = thickness of the olive accent line */
-    border-radius: 14px; /* controls note box corner roundness */
-    padding: 14px 16px; /* 1st = top/bottom space, 2nd = left/right space */
+    border-left: 5px solid #7d842e; 
+    border-radius: 14px; 
+    padding: 14px 16px; 
 }
 
 .tip-modal-note h3 {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 17px; /* controls note heading size */
+    font-size: 17px; 
     color: #5f6424;
-    margin-bottom: 6px; /* controls space below note heading */
+    margin-bottom: 6px; 
 }
 
 .tip-modal-note p {
     font-family: 'Lato', sans-serif;
-    font-size: 15px; /* controls note paragraph size */
-    line-height: 1.5; /* controls spacing between note lines */
+    font-size: 15px; 
+    line-height: 1.5; 
     color: #6b563f;
 }
 
 body.modal-open {
-    overflow: hidden; /* stops the page from scrolling while modal is open */
+    overflow: hidden; 
 }
