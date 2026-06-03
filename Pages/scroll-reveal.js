@@ -1,4 +1,3 @@
-
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

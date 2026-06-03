@@ -10,8 +10,8 @@
     background-color: #e9ddc6; 
     justify-content: center;
     min-height: 120px;
-    gap: clamp(40px, 6vw, 100px); 
-    box-shadow: 0 6px 10px rgba(59, 42, 26, .30); 
+    gap: clamp(40px, 6vw, 100px);
+    box-shadow: 0 6px 10px rgba(59, 42, 26, .30);
     position: relative;
     z-index: 100;
     font-family: 'Lato', sans-serif;
@@ -23,7 +23,7 @@
 }
 
 .nav-logo img {
-    height: clamp(90px, 10vw, 150px); 
+    height: clamp(90px, 10vw, 150px);
     width: auto;
 }
 
@@ -39,30 +39,30 @@
 }
 
 .nav-links a {
-    position: relative; 
+    position: relative;
     text-decoration: none;
     color: #000000;
     font-size: 20px;
 
-    padding-bottom: 6px; 
-    transition: color 0.3s ease; 
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
 }
 
 .nav-links a::after {
     content: "";
     position: absolute;
 
-    left: 50%; 
-    bottom: 0; 
+    left: 50%;
+    bottom: 0;
 
-    width: 0; 
-    height: 3px; 
+    width: 0;
+    height: 3px;
 
     background-color: #b98031;
-    border-radius: 999px; 
+    border-radius: 999px;
 
-    transform: translateX(-50%); 
-    transition: width 0.3s ease; 
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -70,7 +70,7 @@
 }
 
 .nav-links a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
 
 .contact-btn {
@@ -81,8 +81,8 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 17px;
-    text-decoration: none; 
-    display: inline-block; 
+    text-decoration: none;
+    display: inline-block;
 
     transition: 
         background-color 0.3s ease,
@@ -96,8 +96,8 @@
 
 .contact-btn:hover {
     background-color: #535523;
-    transform: translateY(-3px); 
-    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.25); 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(59, 42, 26, 0.25);
 }
 
 html {

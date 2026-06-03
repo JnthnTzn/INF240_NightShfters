@@ -1,5 +1,4 @@
 
-
 const navbar = document.getElementById("navbar");
 
 if (navbar) {
@@ -11,9 +10,6 @@ if (navbar) {
             navbar.innerHTML = data;
         });
 }
-
-
-
 
 const footer = document.getElementById("footer");
 

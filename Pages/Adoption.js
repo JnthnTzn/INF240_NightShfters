@@ -1,4 +1,3 @@
-
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -12,109 +11,72 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => revealObserver.observe(el));
 
-
-const hearts = document.querySelectorAll('.heart');
-hearts.forEach(heart => {
-  heart.addEventListener('click', () => {
-    if(heart.innerHTML === '♡'){
-      heart.innerHTML = '♥';
-      heart.style.color = '#d66';
-    }else{
-      heart.innerHTML = '♡';
-      heart.style.color = '#8d6a4b';
-    }
-  });
-});
-
-
 const petDetails = [
   {
-    name: 'Milo',
+    name: 'Luchi',
     animal: 'Dog',
     breed: 'Aspin (Asong Pinoy)',
-    age: '6 Months',
-    gender: 'Male',
+    age: '4 Years',
+    gender: 'Female',
     size: 'Medium',
     status: 'Rescued',
     personality: 'Playful, Friendly, Affectionate',
     health: 'Vaccinated, Dewormed',
     goodWith: 'Kids, Other Dogs',
     rescuedFrom: 'Barangay Streets',
-    image: '../Assets/AdoptionPage/askal.jpg',
-    traits: ['Playful', 'Friendly', 'Affectionate'],
+    image: '../Assets/HomePage/luchi.png',
     quote: '"Every dog deserves a second chance at love."',
-    story: 'Milo was found wandering the streets of a barangay, malnourished and scared. A kind neighbor spotted him rummaging through garbage for scraps and reached out to Furry Tales. When our rescue team arrived, Milo was hiding under a parked vehicle, trembling and too weak to stand properly. His ribs were visible, his fur was matted, and his eyes were filled with a quiet sadness that broke everyone\'s heart.\n\nAfter being brought to our shelter, Milo received immediate veterinary care — treatment for skin infections, deworming, vaccinations, and a carefully managed feeding plan. In the first few days, he was hesitant and withdrawn, unsure whether to trust the people around him.\n\nBut Milo\'s spirit was never truly broken. Within two weeks, the real Milo began to emerge. He started wagging his tail when volunteers walked in. He discovered his love for fetch and could play for hours without tiring. He learned to sleep without flinching at every sound.\n\nToday, Milo is one of the most affectionate dogs at the shelter. He loves belly rubs, cuddles on rainy afternoons, and greeting every new face with an enthusiastic tail wag. He is proof that with patience and love, even the most broken hearts can heal. Milo is ready to write the next — and best — chapter of his story. With you.'
+    story: 'Luchi was found wandering the streets alone, thin and frightened. A kind neighbor noticed her hiding behind a market stall and contacted Furry Tales. When our team arrived, she was curled up against a wall, tail tucked, too afraid to move.\n\nShe was brought in and given full veterinary care — vaccinations, deworming, and treatment for mild skin irritation. The first few days, she stayed in the corner of her kennel and watched quietly.\n\nBut Luchi had a warm heart that just needed time. By the end of her first week, she was already wagging her tail at the sound of footsteps. She discovered a love for playing fetch and cuddling on cool mornings.\n\nToday, Luchi is one of the most affectionate dogs at the shelter. She greets every visitor with a wagging tail and gentle eyes. She is ready for a home that will love her as much as she will love them.'
   },
   {
-    name: 'Luna',
-    animal: 'Cat',
-    breed: 'Puspin (Pusang Pinoy)',
-    age: '4 Months',
-    gender: 'Female',
-    size: 'Small',
-    status: 'Fostered',
-    personality: 'Curious, Sweet, Gentle',
-    health: 'Vaccinated, Dewormed',
-    goodWith: 'Quiet Homes, Adults',
-    rescuedFrom: 'Abandoned Litter',
-    image: '../Assets/AdoptionPage/puspin.jpg',
-    traits: ['Curious', 'Sweet', 'Gentle'],
-    quote: '"Small paws, big heart."',
-    story: 'Luna was part of a litter of four kittens discovered abandoned in a soggy cardboard box left outside a wet market on a rainy Tuesday morning. She was the smallest — so tiny she fit in the palm of a hand — and the most fragile of the group. When our volunteer found her, she was barely breathing, her body cold and barely moving.\n\nThe next 72 hours were critical. Luna was placed with one of our most experienced foster caregivers, who fed her with a tiny bottle every two hours, day and night, without fail. There were moments when it felt uncertain whether she would make it. But Luna had a fierce will to live.\n\nShe opened her eyes for the first time on a quiet Sunday morning. From that moment, her personality bloomed. She became the most curious creature — batting at dust particles in sunlight, investigating every corner, and chirping softly whenever she wanted company.\n\nNow Luna is a gentle, sweet-natured young cat who purrs like a tiny engine the moment you pick her up. She loves warm laps, watching birds through windows, and slow mornings. She has known hardship from her very first breath — and she deserves nothing less than a lifetime of softness and love.'
-  },
-  {
-    name: 'Rocky',
+    name: 'Nash',
     animal: 'Dog',
-    breed: 'German Shepherd',
-    age: '1 Year',
+    breed: 'Aspin (Asong Pinoy)',
+    age: '7 Years',
     gender: 'Male',
     size: 'Large',
     status: 'Rescued',
-    personality: 'Loyal, Smart, Protective',
+    personality: 'Curious, Sweet, Gentle',
     health: 'Vaccinated, Neutered',
-    goodWith: 'Experienced Owners',
+    goodWith: 'Calm Homes, Adults',
     rescuedFrom: 'Neglect Case',
-    image: '../Assets/AdoptionPage/german.jpg',
-    traits: ['Loyal', 'Smart', 'Protective'],
-    quote: '"Loyalty is not just a word — it\'s a promise."',
-    story: 'Rocky arrived at Furry Tales on a cold evening, surrendered by an owner who admitted they could no longer manage him. He stepped out with guarded eyes and a stiff posture — the body language of a dog who had learned that trust could be taken away without warning.\n\nIn his first weeks, Rocky kept mostly to himself. He was not aggressive, but he was distant — watching, waiting, calculating whether the kindness being offered was real. Our team gave him space, let him set the pace. A slow hand extended. A quiet voice. Treats left near his kennel without expectation.\n\nAnd then one morning, Rocky walked up to one of our volunteers and sat beside her. Just sat there, leaning slightly against her leg. It was a small moment — but everyone who saw it knew it meant everything.\n\nFrom that point, Rocky\'s transformation was steady and remarkable. He mastered commands quickly, took pride in doing things right, and discovered a love for morning runs. Rocky is loyal in the deepest sense of the word. He will give everything to the person who earns his trust.'
+    image: '../Assets/HomePage/nash.png',
+    quote: '"Gentle souls make the most loyal companions."',
+    story: 'Nash came to us through a neglect report. He was found tied outside an abandoned property with no food or water nearby. Despite everything, Nash showed no aggression — only a quiet, watchful sadness.\n\nOur team provided immediate care and gave him the space he needed to feel safe. Nash is not a dog who rushes. He observes, thinks, and chooses carefully who he trusts.\n\nOver the weeks, Nash slowly opened up. He started resting near volunteers, then leaning against them. He discovered he loved gentle ear scratches and sitting beside people on quiet afternoons.\n\nNash is a deeply sweet soul who has been through a lot. He deserves a patient, calm home where he can finally feel completely safe and loved for the rest of his life.'
   },
   {
-    name: 'Coco',
+    name: 'Sun sun',
     animal: 'Cat',
-    breed: 'Persian',
-    age: '8 Months',
-    gender: 'Female',
+    breed: 'Puspin (Pusang Pinoy)',
+    age: '1 Year',
+    gender: 'Male',
     size: 'Small',
     status: 'Fostered',
-    personality: 'Calm, Independent, Loving',
-    health: 'Vaccinated, Spayed',
-    goodWith: 'Calm Homes, Singles',
-    rescuedFrom: 'Shelter Transfer',
-    image: '../Assets/AdoptionPage/persian.jpg',
-    traits: ['Calm', 'Independent', 'Loving'],
-    quote: '"Elegance is not just for royalty — it\'s for every cat."',
-    story: 'Coco arrived through a transfer from an overcrowded city shelter that had run out of space. When the carrier door was opened, she did not rush out. She simply looked around with calm amber eyes — unhurried, unbothered, as though the world could wait.\n\nThat composure never left her. Even in the busy shelter environment, Coco moved through it all with quiet dignity. She found her favorite windowsill within the first day and claimed it without fuss.\n\nCoco is not the kind of cat who demands attention. She expresses herself in softer ways — a slow blink from across the room, a gentle press of her head against your hand, a soft purr that starts almost imperceptibly and grows the longer you stay.\n\nShe loves being brushed, sitting near people more than being held, and watching the world through glass. Coco is perfect for someone who understands that affection does not always announce itself loudly. She will enrich your life quietly, consistently, and beautifully.'
+    personality: 'Loyal, Smart, Protective',
+    health: 'Vaccinated, Dewormed',
+    goodWith: 'Quiet Homes, Adults',
+    rescuedFrom: 'Abandoned Litter',
+    image: '../Assets/HomePage/sun.png',
+    quote: '"Small but mighty — that is Sun sun."',
+    story: 'Sun sun was the only survivor of a litter found abandoned in a box near a drainage canal. He was barely a few weeks old when our volunteer discovered him, cold and alone but fiercely determined to live.\n\nHe was placed with a foster caregiver who bottle-fed him around the clock. Sun sun was a fighter from the start — loud, curious, and full of personality even as a tiny kitten.\n\nAs he grew, his character became clear. He is sharp, observant, and surprisingly loyal for a cat. He follows his favorite people from room to room and chirps to get their attention.\n\nSun sun is ready for a home where he will be the center of someone\'s world — because that is exactly what he will make you feel like you are in his.'
   },
   {
-    name: 'Buddy',
+    name: 'Chaw chaw',
     animal: 'Dog',
-    breed: 'Golden Retriever',
-    age: '7 Months',
-    gender: 'Male',
+    breed: 'Chow Chow Mix',
+    age: '8 Months',
+    gender: 'Female',
     size: 'Medium',
     status: 'Rescued',
-    personality: 'Friendly, Energetic, Loyal',
+    personality: 'Calm, Independent, Loving',
     health: 'Vaccinated, Dewormed',
-    goodWith: 'Families, Kids, Other Pets',
+    goodWith: 'Families, Calm Homes',
     rescuedFrom: 'Street Rescue',
-    image: '../Assets/AdoptionPage/golden.png',
-    traits: ['Friendly', 'Energetic', 'Loyal'],
-    quote: '"Happiness is a warm puppy."',
-    story: 'Buddy was found tied to a post outside a convenience store on a busy street corner. Whoever left him there never came back. He waited for hours — tail still wagging, tongue lolling, eyes bright and trusting — as the day stretched into evening and the crowd thinned.\n\nWhen our rescue team arrived, Buddy greeted them as though they were long-lost friends. No fear. No hesitation. Just pure, uncomplicated joy at the presence of people.\n\nThat is Buddy\'s defining quality: an unshakeable, inexhaustible love for the world and everyone in it. Abandonment did not teach him to be cautious. Uncertainty did not dim his light.\n\nAt the shelter, Buddy quickly became everyone\'s favorite. He gets along beautifully with other dogs, plays gently with children, and has never met a stranger he did not immediately want to befriend. He loves morning walks, splashing in puddles, and falling asleep stretched across the largest available surface.\n\nBuddy just needs someone to come home to. And whoever that person is — they will be the luckiest person in the world.'
+    image: '../Assets/HomePage/chow.png',
+    quote: '"She is calm waters and quiet love."',
+    story: 'Chaw chaw was spotted by a passerby sitting alone on a busy roadside, looking lost and confused. She was brought to Furry Tales the same evening, tired but unharmed.\n\nFrom her very first night at the shelter, Chaw chaw was remarkably composed. She settled into her space quietly, ate well, and slept peacefully. The kind of dog who adapts with grace.\n\nShe is not loud or demanding. She expresses her love in subtle ways — sitting close, resting her head on your lap, watching you with soft, trusting eyes.\n\nChaw chaw would thrive in a home that appreciates quiet companionship. She will not ask for much, but she will give you everything in return — steady, gentle, unconditional love.'
   }
 ];
-
 
 const overlay = document.getElementById('profileModalOverlay');
 const closeBtn = document.getElementById('profileModalClose');
@@ -130,6 +92,7 @@ function openModal(index){
   if(!data) return;
   currentPet = data;
 
+  document.getElementById('profileLeftName').textContent = data.name;
   document.getElementById('profileModalTitle').textContent = data.name;
   document.getElementById('profileModalStatus').textContent = data.status;
   document.getElementById('profileModalImage').src = data.image;
@@ -137,8 +100,8 @@ function openModal(index){
   document.getElementById('profileModalQuotePreview').textContent = data.quote;
 
   document.getElementById('profileModalGenderAge').innerHTML = `
-    <span>🛁 ${data.gender}</span>
-    <span>🐾 ${data.age}</span>
+    <span>${data.gender}</span>
+    <span>${data.age}</span>
   `;
 
   document.getElementById('profileModalGrid').innerHTML = `
@@ -192,7 +155,42 @@ document.getElementById('shareStoryBtn').addEventListener('click', () => {
   }
 });
 
-overlay.addEventListener('click', (e) => { if(e.target === overlay) closeModal(); });
+document.getElementById('btnMeetInPerson').addEventListener('click', () => {
+  document.getElementById('meetModalOverlay').classList.add('open');
+});
+
+document.getElementById('meetModalClose').addEventListener('click', () => {
+  document.getElementById('meetModalOverlay').classList.remove('open');
+});
+
+document.getElementById('meetModalCloseBtn').addEventListener('click', () => {
+  document.getElementById('meetModalOverlay').classList.remove('open');
+});
+
+document.getElementById('meetModalOverlay').addEventListener('click', (e) => {
+  if(e.target === document.getElementById('meetModalOverlay')){
+    document.getElementById('meetModalOverlay').classList.remove('open');
+  }
+});
+
+document.querySelector('.btn-adopt-modal').addEventListener('click', () => {
+  const adoptOverlay = document.getElementById('adoptModalOverlay');
+  adoptOverlay.classList.add('open');
+});
+
+document.getElementById('adoptModalClose').addEventListener('click', () => {
+  document.getElementById('adoptModalOverlay').classList.remove('open');
+});
+
+document.getElementById('adoptModalCloseBtn').addEventListener('click', () => {
+  document.getElementById('adoptModalOverlay').classList.remove('open');
+});
+
+document.getElementById('adoptModalOverlay').addEventListener('click', (e) => {
+  if(e.target === document.getElementById('adoptModalOverlay')) {
+    document.getElementById('adoptModalOverlay').classList.remove('open');
+  }
+});
 storyOverlay.addEventListener('click', (e) => { if(e.target === storyOverlay) closeStory(); });
 
 document.addEventListener('keydown', (e) => {
@@ -201,7 +199,6 @@ document.addEventListener('keydown', (e) => {
     else if(overlay.classList.contains('open')) closeModal();
   }
 });
-
 
 let currentFilters = { animal: '', breed: '', age: '' };
 
@@ -232,7 +229,6 @@ function searchPets(){
   filterPets();
 }
 
-
 const dogBreeds = [
   'Aspin (Asong Pinoy)','Bantam','Ilocos Dog','Cordillera Dog',
   'Labrador Retriever','Golden Retriever','Shih Tzu','Poodle',
@@ -246,7 +242,6 @@ const catBreeds = [
   'British Shorthair','Scottish Fold','Abyssinian',
   'Birman','Sphynx','Russian Blue','American Shorthair'
 ];
-
 
 const animalTrigger = document.getElementById('animalTrigger');
 const animalDropdown = document.getElementById('animalDropdown');

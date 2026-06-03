@@ -87,7 +87,7 @@
                         <div class="urgency-btns" id="urgencyBtns">
                             <button type="button" class="urgency-btn" data-value="Low">Low</button>
                             <button type="button" class="urgency-btn" data-value="Medium">Medium</button>
-                            <button type="button" class="urgency-btn active" data-value="High">High</button>
+                            <button type="button" class="urgency-btn" data-value="High">High</button>
                         </div>
                         <input type="hidden" name="urgency" id="urgencyValue" value="High">
                     </div>
@@ -200,7 +200,7 @@
                         <h4>Contact Us</h4>
                         <div class="contact-item"><img src="../Assets/Footer/Phone.png" alt="Phone"><p>+63 912 345 6789</p></div>
                         <div class="contact-item"><img src="../Assets/Footer/Gmail.png" alt="Email"><p>furrytales@gmail.com</p></div>
-                        <div class="contact-item"><img src="../Assets/Footer/Location.png" alt="Location"><p>123 Paw Street, Hope City</p></div>
+                        <div class="contact-item"><img src="../Assets/Footer/Location.png" alt="Location"><p>123 Paw Street, Pasig City</p></div>
                         <div class="contact-item"><span>🕐</span><p>Mon - Sat | 9:00 AM - 5:00 PM</p></div>
                     </div>
                     <div class="footer-section footer-newsletter">
@@ -214,7 +214,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+                <p>&copy; 2026 Furry Tales. All rights reserved.</p>
             </div>
         </footer>
 
@@ -255,8 +255,8 @@
     urgencyBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            urgencyBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            urgencyBtns.forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
             urgencyValue.value = btn.dataset.value;
         });
     });
@@ -281,8 +281,8 @@
         photoInput.value = '';
         photoName.textContent = '';
         photoName.style.display = 'none';
-        urgencyBtns.forEach(btn => btn.classList.remove('active'));
-        urgencyBtns[2].classList.add('active');
+        urgencyBtns.forEach(btn => btn.classList.remove('selected'));
+        urgencyBtns[2].classList.add('selected');
         urgencyValue.value = 'High';
     });
 </script>

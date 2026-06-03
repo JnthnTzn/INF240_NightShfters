@@ -77,7 +77,7 @@ body { font-family: 'Lato', sans-serif; background: #fdf6ee; color: #3b2a1a; }
 .urgency-btns button:nth-child(1).selected { background: #c9b89a; border-color: #c9b89a; }
 .urgency-btns button:nth-child(2).selected { background: #d4a87a; border-color: #d4a87a; }
 .urgency-btns button:nth-child(3).selected { background: #8f4e1f; border-color: #8f4e1f; }
-.btn-submit {
+.btn-submit {   
     width: 100%; margin-top: 16px; padding: 12px;
     background: #c1692a; color: #fff; border: none; border-radius: 8px;
     font-size: 0.9rem; font-weight: 700; cursor: pointer; letter-spacing: 0.5px;
